@@ -100,15 +100,26 @@ export default function PricingAnchor() {
             target="_blank"
             rel="noopener noreferrer"
             className="
-              inline-flex items-center justify-center gap-3
-              bg-[#25D366] hover:bg-[#20bd5c]
-              text-white font-semibold
-              px-8 md:px-10 py-4
-              rounded-2xl
-              shadow-lg shadow-green-500/20
-              hover:-translate-y-1 hover:shadow-xl
-              transition-all duration-300
-            "
+                group
+                w-full sm:w-auto
+                inline-flex items-center justify-center gap-3
+
+                bg-[#25D366]
+                hover:bg-[#20bd5c]
+
+                text-white
+                font-semibold
+
+                px-8 py-4
+
+                rounded-2xl
+
+                shadow-lg shadow-green-500/20
+                hover:-translate-y-1
+                hover:shadow-xl
+
+                transition-all duration-300
+              "
           >
 
             <span className="text-lg">
