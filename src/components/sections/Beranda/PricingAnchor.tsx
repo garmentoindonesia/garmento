@@ -123,7 +123,7 @@ export default function PricingAnchor() {
           >
 
             <span className="text-lg">
-              Penawaran Harga Sekarang
+              Dapatkan Penawaran Harga
             </span>
 
             <Image
