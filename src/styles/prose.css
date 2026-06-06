@@ -1,0 +1,228 @@
+/* =========================
+   PRO BLOG TYPOGRAPHY SYSTEM
+   ========================= */
+
+.article-content {
+  color: #374151;
+  font-size: 1.125rem;
+  line-height: 1.9;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset first/last spacing */
+.article-content > *:first-child {
+  margin-top: 0;
+}
+
+.article-content > *:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   HEADINGS
+   ========================= */
+
+.article-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.article-content h2 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-top: 4rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.article-content h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.3;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   PARAGRAPH
+   ========================= */
+
+.article-content p {
+  margin: 1.5rem 0;
+  text-wrap: pretty;
+}
+
+/* =========================
+   LIST (PRO FIX - NO ::marker)
+   ========================= */
+
+.article-content ul,
+.article-content ol {
+  margin: 1.75rem 0;
+  padding-left: 0;
+}
+
+.article-content li {
+  position: relative;
+  margin: 0.75rem 0;
+  padding-left: 1.6rem;
+  text-wrap: pretty;
+}
+
+/* nested list spacing */
+.article-content li ul,
+.article-content li ol {
+  margin: 0.75rem 0;
+}
+
+/* bullet */
+.article-content ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: 800;
+}
+
+/* numbered list */
+.article-content ol {
+  counter-reset: item;
+}
+
+.article-content ol li {
+  counter-increment: item;
+}
+
+.article-content ol li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+/* =========================
+   STRONG
+   ========================= */
+
+.article-content strong {
+  color: #111827;
+  font-weight: 700;
+}
+
+/* =========================
+   LINKS
+   ========================= */
+
+.article-content a {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.article-content a:hover {
+  opacity: 0.75;
+  color: #1e40af;
+}
+
+/* =========================
+   IMAGES
+   ========================= */
+
+.article-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin: 3rem 0;
+  display: block;
+}
+
+/* =========================
+   BLOCKQUOTE
+   ========================= */
+
+.article-content blockquote {
+  margin: 3rem 0;
+  padding: 1.5rem 2rem;
+  border-left: 5px solid #1d4ed8;
+  background: #f8fafc;
+  border-radius: 0 16px 16px 0;
+  color: #1f2937;
+  font-style: italic;
+}
+
+/* =========================
+   HR
+   ========================= */
+
+.article-content hr {
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 4rem 0;
+}
+
+/* =========================
+   CODE
+   ========================= */
+
+.article-content code {
+  background: #f3f4f6;
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-size: 0.95em;
+  color: #111827;
+}
+
+.article-content pre {
+  background: #0b0c0d;
+  color: #e5e7eb;
+  padding: 1.25rem 1.5rem;
+  border-radius: 14px;
+  overflow-x: auto;
+  margin: 2.5rem 0;
+  line-height: 1.6;
+}
+
+.article-content pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+/* =========================
+   TABLE
+   ========================= */
+
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2.5rem 0;
+  font-size: 1rem;
+}
+
+.article-content th,
+.article-content td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.article-content th {
+  background: #f9fafb;
+  font-weight: 700;
+  color: #111827;
+}

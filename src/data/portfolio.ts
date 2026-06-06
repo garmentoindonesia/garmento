@@ -1,0 +1,111 @@
+export const portfolioData = [
+  {
+    id: 1,
+    title: "Kaos Shopee",
+    category: "kaos",
+    image: "/kaosshopee.jpg",
+    qty: "1200 pcs",
+    teknik: "Sablon Rubber",
+    client: "Shopee",
+    year: "2020",
+  },
+
+  {
+    id: 2,
+    title: "Kaos POS Indonesia",
+    category: "kaos",
+    image: "/kaospos.jpg",
+    qty: "400 pcs",
+    teknik: "Sablon Plastisol",
+    client: "POS Indonesia",
+    year: "2021",
+  },
+
+  {
+    id: 3,
+    title: "Kaos BANK BRI",
+    category: "kaos",
+    image: "/kaosbri.jpg",
+    qty: "1000 pcs",
+    teknik: "Sablon Polyflex",
+    client: "BANK BRI",
+    year: "2022",
+  },
+
+  {
+    id: 4,
+    title: "Kaos Adhi Karya",
+    category: "kaos",
+    image: "/kaosadhi.jpg",
+    qty: "5200 pcs",
+    teknik: "Sablon Plastisol",
+    client: "Adhi Karya",
+    year: "2023",
+  },
+
+  {
+    id: 5,
+    title: "Kaos BIKA SQUAD",
+    category: "kaos",
+    image: "/kaosbika.jpg",
+    qty: "400 pcs",
+    teknik: "Sablon DTF",
+    client: "SDIT BIKA",
+    year: "2026",
+  },
+
+  {
+    id: 6,
+    title: "Polo Shirt Yogyakarta",
+    category: "polo",
+    image: "/yogyakartapolo.jpg",
+    qty: "690 pcs",
+    teknik: "Bordir Komputer",
+    client: "Bakpia Jogkau",
+    year: "2019",
+  },
+
+  {
+    id: 7,
+    title: "Polo Shirt BANK BRI",
+    category: "polo",
+    image: "/bripolo.jpg",
+    qty: "1000 pcs",
+    teknik: "Sablon Polyflex",
+    client: "BANK BRI",
+    year: "2022",
+  },
+
+  {
+    id: 8,
+    title: "Polo POS Indonesia",
+    category: "polo",
+    image: "/pospolo.jpg",
+    qty: "400 pcs",
+    teknik: "Bordir Komputer",
+    client: "POS Indonesia",
+    year: "2021",
+  },
+
+  {
+    id: 9,
+    title: "Polo Shirt CREW Cafe",
+    category: "polo",
+    image: "/crewpolo.jpg",
+    qty: "550 pcs",
+    teknik: "Sablon Plastisol",
+    client: "Cafe instenta",
+    year: "2016",
+  },
+
+  {
+    id: 10,
+    title: "Polo Shirt Shopee",
+    category: "polo",
+    image: "/shopeepolo.jpg",
+    qty: "1200 pcs",
+    teknik: "Bordir Komputer",
+    client: "Shopee",
+    year: "2020",
+  },
+];
