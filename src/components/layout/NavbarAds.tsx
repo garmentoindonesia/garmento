@@ -37,26 +37,29 @@ export default function NavbarAds() {
                 scrolled
                   ? "/logoheadernavy.png"
                   : "/footerlogo.png"
-                  }
-                alt="Garmento Logo"
-                width={170}
-                height={70}
-                priority
+              }
+              alt="Garmento Logo"
+              width={170}
+              height={70}
+              priority
             />
           </div>
 
-          {/* CTA */}
+          {/* CTA (MOBILE FIXED + RESPONSIVE) */}
           <a
             href="https://wa.me/6281329269977"
             target="_blank"
             rel="noopener noreferrer"
             className={`
-              hidden md:inline-flex
-              px-5 py-2.5 rounded-xl
-              text-sm font-medium
+              inline-flex items-center justify-center
+              px-3 sm:px-5
+              py-2 sm:py-2.5
+              rounded-lg sm:rounded-xl
+              text-xs sm:text-sm font-medium
               transition-all duration-300
               hover:-translate-y-0.5
               hover:shadow-lg
+              whitespace-nowrap
 
               ${
                 scrolled
