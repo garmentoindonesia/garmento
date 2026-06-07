@@ -33,7 +33,7 @@ export default function Hero() {
               font-bold text-white
               leading-[1.15]
               tracking-[-0.5px]
-              text-center md:text-left
+              text-left
             "
           >
 
@@ -60,7 +60,7 @@ export default function Hero() {
             className="
               mt-6 text-lg text-white/85
               leading-relaxed max-w-xl
-              text-center md:text-left
+              text-left
               mx-auto md:mx-0
             "
           >
