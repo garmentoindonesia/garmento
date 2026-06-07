@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Jasa produksi kaos custom, polo shirt, dan kaos partai skala besar untuk perusahaan, event, dan instansi di Indonesia.",
+    "Jasa produksi kaos custom & polo shirt skala besar untuk perusahaan, event, dan instansi di Indonesia.",
 
   alternates: {
     canonical: "/",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     url: "https://www.garmento.id",
     title: "GARMENTO - Produksi Kaos Skala Besar",
     description:
-      "Jasa produksi kaos custom, polo shirt, dan kaos partai skala besar untuk perusahaan, event, dan instansi di Indonesia.",
+      "Jasa produksi kaos custom & polo shirt skala besar untuk perusahaan, event, dan instansi di Indonesia.",
     siteName: "GARMENTO",
     images: [
       {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GARMENTO - Produksi Kaos Skala Besar",
     description:
-      "Jasa produksi kaos custom, polo shirt, dan kaos partai skala besar untuk perusahaan, event, dan instansi di Indonesia.",
+      "Jasa produksi kaos custom & polo shirt skala besar untuk perusahaan, event, dan instansi di Indonesia.",
     images: ["/og-image.jpg"],
   },
 
