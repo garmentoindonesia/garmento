@@ -60,12 +60,12 @@ export default function ProductPPS() {
               tracking-[-0.5px]
             "
           >
-            Berbagai Model Polo Shirt
+            Berbagai Model
 
             <br />
 
             <span className="text-[#1E4ED8]">
-              Sesuai Kebutuhan Anda
+              Polo Shirt Sesuai Kebutuhan
             </span>
           </h2>
 

@@ -65,7 +65,7 @@ export default function ProductPKC() {
             <br />
 
             <span className="text-[#1E4ED8]">
-              Sesuai Kebutuhan Anda
+              Sesuai Kebutuhan
             </span>
           </h2>
 
