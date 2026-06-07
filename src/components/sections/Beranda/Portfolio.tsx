@@ -78,8 +78,6 @@ export default function Portfolio() {
                 font-bold text-[#1E4ED8]
                 leading-[1.15]
                 tracking-[-0.4px]
-
-                text-center md:text-left
               "
           >
             Beberapa hasil produksi untuk klien perusahaan,

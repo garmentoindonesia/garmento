@@ -52,8 +52,6 @@ export default function Process() {
                 font-bold text-[#1E4ED8]
                 leading-[1.15]
                 tracking-[-0.4px]
-
-                text-center md:text-left
               "
           >
             Setiap pesanan ditangani dengan proses yang terukur
