@@ -1,3 +1,6 @@
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+
 import Hero from "@/components/sections/Beranda/Hero";
 import TrustBar from "@/components/sections/Beranda/TrustBar";
 import Pain from "@/components/sections/Beranda/Pain";
@@ -12,11 +15,10 @@ import CTA from "@/components/sections/Beranda/CTA";
 export default function Home() {
   return (
     <main className="bg-white">
-
+      <Navbar />
       <Hero />
       <TrustBar />
       <Pain />
-
       <Solution />
       <Services />
       <SocialProof />
@@ -24,7 +26,7 @@ export default function Home() {
       <PricingAnchor />
       <Portfolio />
       <CTA />
-
+      <Footer />
     </main>
   );
 }

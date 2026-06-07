@@ -1,7 +1,6 @@
 import "@/styles/prose.css";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+
 
 import { Plus_Jakarta_Sans } from "next/font/google";
 import type { Metadata } from "next";
@@ -66,7 +65,7 @@ export default function RootLayout({
   return (
     <html lang="id" className={plusJakarta.variable}>
       <body className={plusJakarta.className}>
-        <Navbar />
+        
         {children}
         
         <script
