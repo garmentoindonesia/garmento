@@ -28,18 +28,8 @@ export default function FooterAds() {
           gap-4
         "
       >
-        {/* COPYRIGHT */}
-        <p
-          className="
-            text-sm
-            text-gray-400
-            text-center
-            md:text-left
-          "
-        >
-          © 2026 GARMENTO. All rights reserved.
-        </p>
-
+        
+        {/* ADDRESSES */}
         <a href="https://maps.app.goo.gl/zfrafA6HVQLBpx7m8" className="flex items-start gap-3 group">
           <Image src="/map.svg" alt="Map" width={20} height={20} />
             <div>
@@ -59,6 +49,18 @@ export default function FooterAds() {
               </p>
             </div>
         </a>
+
+        {/* COPYRIGHT */}
+        <p
+          className="
+            text-sm
+            text-gray-400
+            text-center
+            md:text-left
+          "
+        >
+          © 2026 GARMENTO. All rights reserved.
+        </p>
 
         {/* LEGAL LINKS */}
         <div
