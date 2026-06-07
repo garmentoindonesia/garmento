@@ -72,10 +72,19 @@ export default function Portfolio() {
             Hasil Produksi Kami
           </h2>
 
-          <p className="mt-4 text-gray-600 text-sm md:text-lg leading-relaxed">
+          <h2
+              className="
+                text-xl md:text-3xl
+                font-bold text-[#1E4ED8]
+                leading-[1.15]
+                tracking-[-0.4px]
+
+                text-center md:text-left
+              "
+          >
             Beberapa hasil produksi untuk klien perusahaan,
             event, dan instansi.
-          </p>
+          </h2>
 
         </div>
 

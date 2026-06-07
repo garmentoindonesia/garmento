@@ -21,7 +21,11 @@ export default function Pain() {
           >
             Produksi Kaos Skala Besar
             <br />
-            Tidak Bisa Asal Pilih Vendor
+            
+            <span className="text-[#1E4ED8]">
+              Tidak Bisa Asal Pilih Vendor
+            </span>
+
           </h2>
 
           {/* POINTS */}

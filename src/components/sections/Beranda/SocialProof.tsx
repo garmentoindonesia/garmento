@@ -90,7 +90,21 @@ export default function SocialProof() {
         <div className="max-w-3xl mx-auto text-center">
 
           <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight">
-            Mereka Sudah Produksi Bareng GARMENTO
+            Mereka Sudah Produksi
+            
+          <br />
+            <span 
+              className="
+                bg-gradient-to-r
+                from-[#20bd5c]
+                to-[#315BFF]
+
+                bg-clip-text
+                text-transparent
+              "
+            >
+              Bareng GARMENTO
+            </span>
           </h2>
 
           <p className="mt-4 text-blue-100 leading-relaxed">

@@ -46,10 +46,19 @@ export default function Process() {
             Alur Produksi yang Jelas & Terstruktur
           </h2>
 
-          <p className="mt-3 text-gray-600 text-sm md:text-base leading-relaxed">
+          <h2
+              className="
+                text-xl md:text-3xl
+                font-bold text-[#1E4ED8]
+                leading-[1.15]
+                tracking-[-0.4px]
+
+                text-center md:text-left
+              "
+          >
             Setiap pesanan ditangani dengan proses yang terukur
             untuk hasil terbaik.
-          </p>
+          </h2>
 
         </div>
 

@@ -32,10 +32,19 @@ export default function Services() {
             Layanan Produksi Kami
           </h2>
 
-          <p className="mt-4 text-gray-600 leading-relaxed">
+          <h2
+              className="
+                text-xl md:text-3xl
+                font-bold text-[#1E4ED8]
+                leading-[1.15]
+                tracking-[-0.4px]
+
+                text-center md:text-left
+              "
+          >
             Solusi produksi apparel untuk berbagai kebutuhan bisnis
             dan event Anda.
-          </p>
+          </h2>
 
         </div>
 

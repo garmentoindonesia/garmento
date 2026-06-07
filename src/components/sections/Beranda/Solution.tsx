@@ -101,8 +101,13 @@ export default function Solution() {
               "
             >
               GARMENTO: Vendor Produksi Kaos
+              
               <br />
-              Skala Besar yang Terstruktur
+
+              <span className="text-[#1E4ED8]">
+                Skala Besar yang Terstruktur
+              </span>
+
             </h2>
 
             <p
