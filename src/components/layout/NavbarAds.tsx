@@ -33,12 +33,15 @@ export default function NavbarAds() {
           {/* LOGO (NO LINK) */}
           <div className="flex items-center">
             <Image
-              src="/logoheadernavy.png"
-              alt="GARMENTO"
-              width={160}
-              height={60}
-              priority
-              className="w-[120px] sm:w-[160px] h-auto"
+              src={
+                scrolled
+                  ? "/logoheadernavy.png"
+                  : "/footerlogo.png"
+                  }
+                alt="Garmento Logo"
+                width={170}
+                height={70}
+                priority
             />
           </div>
 
