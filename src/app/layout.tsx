@@ -4,36 +4,52 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 import { Plus_Jakarta_Sans } from "next/font/google";
+import type { Metadata } from "next";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-plus-jakarta",
 });
 
-/*
-import type { Metadata } from "next";
-
 export const metadata: Metadata = {
-  metadataBase: new URL("https://garmento.id"),
+  metadataBase: new URL("https://www.garmento.id"),
 
   title: {
     default: "GARMENTO - Produksi Kaos Skala Besar",
-    template: "%s",
+    template: "%s | GARMENTO",
   },
 
   description:
-    "Jasa produksi kaos custom, polo shirt, dan kaos partai skala besar untuk perusahaan, event, dan instansi.",
+    "Jasa produksi kaos custom, polo shirt, dan kaos partai skala besar untuk perusahaan, event, dan instansi di Indonesia.",
 
-  icons: {
-    icon: "/faviconnavy.png",
+  alternates: {
+    canonical: "/",
   },
-};
-*/
 
-export const metadata = {
-  title: "GARMENTO - Produksi Kaos Skala Besar",
-  description:
-    "Jasa produksi kaos custom, polo shirt, dan kaos partai skala besar untuk perusahaan, event, dan instansi.",
+  openGraph: {
+    type: "website",
+    url: "https://www.garmento.id",
+    title: "GARMENTO - Produksi Kaos Skala Besar",
+    description:
+      "Jasa produksi kaos custom, polo shirt, dan kaos partai skala besar untuk perusahaan, event, dan instansi di Indonesia.",
+    siteName: "GARMENTO",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "GARMENTO - Produksi Kaos Skala Besar",
+    description:
+      "Jasa produksi kaos custom, polo shirt, dan kaos partai skala besar untuk perusahaan, event, dan instansi di Indonesia.",
+    images: ["/og-image.jpg"],
+  },
+
   icons: {
     icon: "/faviconnavy.png",
   },
@@ -45,7 +61,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id">
+    <html lang="id" className={plusJakarta.variable}>
       <body className={plusJakarta.className}>
         <Navbar />
         {children}
