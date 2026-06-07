@@ -3,24 +3,22 @@ import Image from "next/image";
 export default function HeroPKC() {
 return (
 <section
-className="
-relative
-w-full
-overflow-hidden
-bg-cover
-bg-center
-bg-no-repeat
-pb-16 md
-"
-style={{
-backgroundImage: "url('/backgroundPKC.jpg')",
-}}
+  className="
+    relative
+    w-full
+    overflow-hidden
+    bg-cover
+    bg-center
+    bg-no-repeat
+    pb-16 md
+  "
+  style={{
+          backgroundImage: "url('/backgroundPKC.jpg')",
+        }}
 >
 {/* OVERLAY */}
 
-
-
-  <div className="relative z-10 max-w-7xl mx-auto px-6 pt-36 pb-20 grid md:grid-cols-2 gap-10 md:gap-14 lg:gap-20 items-center">
+  <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 md:pt-36 pb-20 grid md:grid-cols-2 gap-10 md:gap-14 lg:gap-20 items-center">
 
     {/* LEFT */}
     <div className="animate-fadeLeft">
