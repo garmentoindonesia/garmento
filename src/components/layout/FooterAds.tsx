@@ -10,24 +10,20 @@ export default function FooterAds() {
         border-white/10
       "
     >
-      <div
-        className="
-          max-w-7xl
-          mx-auto
-          px-6
-          py-8
+      <div className="max-w-7xl mx-auto px-6 py-8">
 
-          flex
-          flex-col
-          lg:flex-row
-
-          justify-between
-          gap-8
-        "
-      >
-        {/* LEFT SIDE - ADDRESSES */}
-        <div className="flex flex-col gap-5 flex-1">
-
+        {/* ADDRESS ROW */}
+        <div
+          className="
+            grid
+            grid-cols-1
+            md:grid-cols-2
+            gap-8
+            pb-8
+            border-b
+            border-white/10
+          "
+        >
           <a
             href="https://maps.app.goo.gl/zfrafA6HVQLBpx7m8"
             target="_blank"
@@ -56,8 +52,9 @@ export default function FooterAds() {
                   transition
                 "
               >
-                Jl. Bintaro Tengah Blok J4 No.12 Bintaro
-                Pesanggrahan, Jakarta Selatan
+                Jl. Bintaro Tengah Blok J4 No.12
+                Bintaro Pesanggrahan,
+                Jakarta Selatan
               </p>
             </div>
           </a>
@@ -91,48 +88,42 @@ export default function FooterAds() {
                 "
               >
                 Jl. Menayu Lor Plurugan No.112
-                Tirtonirmolo Kasihan, Bantul,
-                Daerah Istimewa Yogyakarta
+                Tirtonirmolo Kasihan,
+                Bantul, DIY
               </p>
             </div>
           </a>
-
         </div>
 
-        {/* RIGHT SIDE */}
+        {/* BOTTOM ROW */}
         <div
           className="
+            pt-6
+
             flex
             flex-col
+            md:flex-row
 
-            items-start
-            lg:items-end
+            items-center
+            justify-between
 
             gap-4
-
-            pt-2
           "
         >
-          {/* COPYRIGHT */}
           <p
             className="
               text-sm
               text-gray-400
-
-              text-left
-              lg:text-right
             "
           >
             © 2026 GARMENTO. All rights reserved.
           </p>
 
-          {/* LEGAL LINKS */}
           <div
             className="
               flex
-              flex-wrap
+              items-center
               gap-5
-
               text-sm
             "
           >
@@ -159,6 +150,7 @@ export default function FooterAds() {
             </Link>
           </div>
         </div>
+
       </div>
     </footer>
   );
