@@ -79,8 +79,7 @@ export default function Portfolio() {
                 tracking-[-0.4px]
               "
           >
-            Beberapa hasil produksi untuk klien perusahaan,
-            event, dan instansi.
+            Beberapa hasil produksi untuk klien.
           </p>
 
         </div>

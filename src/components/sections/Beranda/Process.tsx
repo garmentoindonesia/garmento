@@ -53,8 +53,7 @@ export default function Process() {
                 tracking-[-0.4px]
               "
           >
-            Setiap pesanan ditangani dengan proses yang terukur
-            untuk hasil terbaik.
+            Ditangani dengan proses yang terukur & hasil terbaik.
           </p>
 
         </div>

@@ -39,8 +39,7 @@ export default function Services() {
                 tracking-[-0.4px]
               "
           >
-            Solusi produksi apparel untuk berbagai kebutuhan bisnis
-            dan event Anda.
+            Solusi produksi apparel untuk seragam & event.
           </p>
 
         </div>
