@@ -30,7 +30,7 @@ return (
     <div className="animate-fadeLeft">
 
       {/* BADGE */}
-      <div className="flex justify-center md:justify-start">
+      <div className="flex justify-start">
         <div
           className="
               inline-flex items-center gap-2
@@ -71,7 +71,7 @@ return (
             leading-[1.15]
             tracking-[-0.5px]
 
-            text-center md:text-left
+            text-left
         "
       >
         Produksi Kaos Custom
@@ -99,9 +99,8 @@ return (
           mt-6 text-lg text-white/85
           leading-relaxed max-w-xl
 
-          text-center md:text-left
-
-          mx-auto md:mx-0
+          text-left
+          mx-0
         "
       >
         Bikin kaos custom untuk perusahaan,

@@ -30,7 +30,7 @@ backgroundImage: "url('/backgroundPPS.jpg')",
     <div className="animate-fadeLeft">
 
       {/* BADGE */}
-      <div className="flex justify-center md:justify-start">
+      <div className="flex justify-start">
         <div
           className="
               inline-flex items-center gap-2
@@ -71,7 +71,7 @@ backgroundImage: "url('/backgroundPPS.jpg')",
             leading-[1.15]
             tracking-[-0.5px]
 
-            text-center md:text-left
+            text-left
         "
       >
         Produksi Polo Shirt Kualitas
@@ -99,9 +99,9 @@ backgroundImage: "url('/backgroundPPS.jpg')",
           mt-6 text-lg text-white/85
           leading-relaxed max-w-xl
 
-          text-center md:text-left
+          text-left
 
-          mx-auto md:mx-0
+          mx-0
         "
       >
         Polo shirt custom dengan bahan pilihan, jahitan rapi,
