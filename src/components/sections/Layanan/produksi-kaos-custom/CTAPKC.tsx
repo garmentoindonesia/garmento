@@ -81,7 +81,7 @@ export default function CTAPKC() {
             <div className="mt-8 flex justify-center lg:justify-start">
 
               <a
-                href="https://wa.me/6281210004453"
+                href="https://wa.me/6281329269977"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="

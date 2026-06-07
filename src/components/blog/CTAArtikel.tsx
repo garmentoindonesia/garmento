@@ -105,7 +105,7 @@ export default function CTAArtikel() {
           "
         >
           <Link
-            href="https://wa.me/6281234567890"
+            href="https://wa.me/6281329269977"
             target="_blank"
             className="
                 group

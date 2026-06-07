@@ -166,12 +166,12 @@ export default function Footer() {
 
             <div className="mt-5 flex flex-col gap-5">
 
-              <a href="https://wa.me/6281210004453" className="flex items-start gap-3 group">
+              <a href="https://wa.me/6281329269977" className="flex items-start gap-3 group">
                 <Image src="/wa.svg" alt="WA" width={20} height={20} />
                 <div>
                   <p className="text-sm text-white">WhatsApp</p>
                   <p className="text-sm text-gray-300 group-hover:text-white transition">
-                    0812-1000-4453
+                    0813-2926-9977
                   </p>
                 </div>
               </a>

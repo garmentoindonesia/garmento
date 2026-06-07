@@ -142,7 +142,7 @@ backgroundImage: "url('/backgroundPPS.jpg')",
       <div className="mt-8 flex gap-4 flex-col sm:flex-row">
 
         <a
-          href="https://wa.me/6281210004453"
+          href="https://wa.me/6281329269977"
           target="_blank"
           rel="noopener noreferrer"
           className="

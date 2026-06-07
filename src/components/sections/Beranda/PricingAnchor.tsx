@@ -96,7 +96,7 @@ export default function PricingAnchor() {
         <div className="mt-10">
 
           <a
-            href="https://wa.me/6281210004453"
+            href="https://wa.me/6281329269977"
             target="_blank"
             rel="noopener noreferrer"
             className="

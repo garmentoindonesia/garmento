@@ -76,7 +76,7 @@ export default function Hero() {
 
             {/* PRIMARY */}
             <a
-              href="https://wa.me/6281210004453"
+              href="https://wa.me/6281329269977"
               target="_blank"
               rel="noopener noreferrer"
               className="

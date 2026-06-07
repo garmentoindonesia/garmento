@@ -296,7 +296,7 @@ export default function HargaPKC() {
                 </ul>
 
                 <a
-                  href={`https://wa.me/6281210004453?text=${encodeURIComponent(
+                  href={`https://wa.me/6281329269977?text=${encodeURIComponent(
                     plan.whatsapp
                   )}`}
                   target="_blank"
