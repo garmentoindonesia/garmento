@@ -103,7 +103,16 @@ export default function MaterialPKC() {
 
               <br />
 
-              <span className="text-[#1E4ED8]">
+              <span 
+                className="
+                  bg-gradient-to-r
+                  from-[#20bd5c]
+                  to-[#315BFF]
+
+                  bg-clip-text
+                  text-transparent
+                "
+              >
                 Nyaman & Tahan Lama
               </span>
             </h2>
