@@ -4,7 +4,7 @@ import { getAllPosts } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
 
-  const baseUrl = "https://garmento.id";
+  const baseUrl = "https://www.garmento.id";
 
   const posts = getAllPosts();
 

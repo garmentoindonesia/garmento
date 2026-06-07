@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
 
-    sitemap: "https://garmento.id/sitemap.xml",
+    sitemap: "https://www.garmento.id/sitemap.xml",
 
   };
 }
