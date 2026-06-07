@@ -65,10 +65,9 @@ export default function Hero() {
             "
           >
 
-            Melayani produksi kaos custom, polo shirt,
-            dan kaos partai dengan kapasitas ratusan
-            hingga ribuan pcs. Cocok untuk perusahaan,
-            instansi, dan event organizer.
+            Melayani produksi kaos custom & polo shirt
+            dengan kapasitas ratusan hingga ribuan pcs.
+            Cocok untuk perusahaan, instansi, dan event organizer.
 
           </p>
 
