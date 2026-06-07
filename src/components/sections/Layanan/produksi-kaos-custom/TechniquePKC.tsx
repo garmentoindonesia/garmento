@@ -60,12 +60,12 @@ export default function TechniquePKC() {
               tracking-[-0.5px]
             "
           >
-            Hasil Tajam, Awet,
+            Hasil Tajam dan
 
             <br />
 
             <span className="text-[#1E4ED8]">
-              dan Tidak Mudah Pudar
+              Tidak Mudah Pudar
             </span>
 
           </h2>
