@@ -35,7 +35,7 @@ const faqs = [
   },
 ];
 
-export default function FAQPPS() {
+export default function FAQPKC() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
