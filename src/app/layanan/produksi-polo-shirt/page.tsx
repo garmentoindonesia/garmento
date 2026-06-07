@@ -7,7 +7,7 @@ import ProcessPPS from "@/components/sections/Layanan/produksi-polo-shirt/Proces
 import PortfolioPPS from "@/components/sections/Layanan/produksi-polo-shirt/PortfolioPPS";
 import HargaPPS from "@/components/sections/Layanan/produksi-polo-shirt/HargaPPS";
 import FAQSection from "@/components/sections/Layanan/FAQSection";
-import { FAQ_PPS } from "../../../data/faq/pps";
+import { FAQ_PPS } from "@/data/faq/pps";
 import CTAPPS from "@/components/sections/Layanan/produksi-polo-shirt/CTAPPS";
 
 import type { Metadata } from "next";
