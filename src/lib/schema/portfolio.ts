@@ -1,0 +1,14 @@
+export function createPortfolioSchema() {
+  return {
+    "@context": "https://schema.org",
+
+    "@type": "ItemList",
+
+    name: "Portofolio GARMENTO",
+
+    description:
+      "Portofolio produksi kaos custom dan polo shirt untuk perusahaan, event, komunitas, dan instansi.",
+
+    url: "https://www.garmento.id/portofolio",
+  };
+}

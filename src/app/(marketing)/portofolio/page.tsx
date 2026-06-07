@@ -2,8 +2,25 @@ import HeroPortfolio from "@/components/sections/Portofolio/HeroPortfolio";
 import GridPortfolio from "@/components/sections/Portofolio/GridPortfolio";
 import CTAPortfolio from "@/components/sections/Portofolio/CTAPortfolio";
 
+import { createPortfolioSchema } from "@/lib/schema/portfolio";
+import { createBreadcrumbSchema } from "@/lib/schema/breadcrumb";
+
 import type { Metadata } from "next";
 
+
+
+const portfolioSchema = createPortfolioSchema();
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  {
+    name: "Home",
+    url: "https://www.garmento.id",
+  },
+  {
+    name: "Portofolio",
+    url: "https://www.garmento.id/portofolio",
+  },
+]);
 
 export const metadata: Metadata = {
   title: {
@@ -52,7 +69,20 @@ export default function PortfolioPage() {
       <HeroPortfolio />
       <GridPortfolio />
       <CTAPortfolio />
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(portfolioSchema),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+
     </>
   );
 }

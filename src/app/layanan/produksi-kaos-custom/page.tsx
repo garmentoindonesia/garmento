@@ -13,6 +13,8 @@ import CTAPKC from "@/components/sections/Layanan/produksi-kaos-custom/CTAPKC";
 import { createFAQSchema } from "@/lib/schema/faq";
 import { createServiceSchema } from "@/lib/schema/service";
 
+import { createBreadcrumbSchema } from "@/lib/schema/breadcrumb";
+
 import type { Metadata } from "next";
 
 const faqSchema = createFAQSchema(FAQ_PKC);
@@ -24,6 +26,21 @@ const serviceSchema = createServiceSchema({
 
   url: "https://www.garmento.id/layanan/produksi-kaos-custom",
 });
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  {
+    name: "Home",
+    url: "https://www.garmento.id",
+  },
+  {
+    name: "Layanan",
+    url: "https://www.garmento.id/layanan",
+  },
+  {
+    name: "Produksi Kaos Custom",
+    url: "https://www.garmento.id/layanan/produksi-kaos-custom",
+  },
+]);
 
 export const metadata: Metadata = {
   title: {
@@ -93,7 +110,14 @@ export default function ProduksiKaosCustomPage() {
           __html: JSON.stringify(faqSchema),
         }}
       />
-      
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+
     </main>
   );
 }

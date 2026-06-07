@@ -13,6 +13,8 @@ import CTAPPS from "@/components/sections/Layanan/produksi-polo-shirt/CTAPPS";
 import { createFAQSchema } from "@/lib/schema/faq";
 import { createServiceSchema } from "@/lib/schema/service";
 
+import { createBreadcrumbSchema } from "@/lib/schema/breadcrumb";
+
 import type { Metadata } from "next";
 
 const faqSchema = createFAQSchema(FAQ_PPS);
@@ -24,6 +26,21 @@ const serviceSchema = createServiceSchema({
 
   url: "https://www.garmento.id/layanan/produksi-polo-shirt",
 });
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  {
+    name: "Home",
+    url: "https://www.garmento.id",
+  },
+  {
+    name: "Layanan",
+    url: "https://www.garmento.id/layanan",
+  },
+  {
+    name: "Produksi Polo Shirt",
+    url: "https://www.garmento.id/layanan/produksi-polo-shirt",
+  },
+]);
 
 export const metadata: Metadata = {
   title: {
@@ -94,6 +111,13 @@ export default function ProduksiPoloShirtPage() {
         }}
       />
       
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+
     </main>
   );
 }
