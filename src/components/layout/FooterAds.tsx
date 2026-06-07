@@ -19,17 +19,15 @@ export default function FooterAds() {
             grid-cols-1
             md:grid-cols-2
             gap-8
+
             pb-8
+
             border-b
             border-white/10
           "
         >
-          <a
-            href="https://maps.app.goo.gl/zfrafA6HVQLBpx7m8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-start gap-3 group"
-          >
+          {/* REP OFFICE */}
+          <div className="flex items-start gap-3">
             <Image
               src="/map.svg"
               alt="Map"
@@ -48,8 +46,6 @@ export default function FooterAds() {
                   text-sm
                   text-gray-300
                   leading-relaxed
-                  group-hover:text-white
-                  transition
                 "
               >
                 Jl. Bintaro Tengah Blok J4 No.12
@@ -57,14 +53,10 @@ export default function FooterAds() {
                 Jakarta Selatan
               </p>
             </div>
-          </a>
+          </div>
 
-          <a
-            href="https://maps.app.goo.gl/jLiq3Eev19tLpshH6"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-start gap-3 group"
-          >
+          {/* PRODUCTION CENTER */}
+          <div className="flex items-start gap-3">
             <Image
               src="/map.svg"
               alt="Map"
@@ -83,16 +75,14 @@ export default function FooterAds() {
                   text-sm
                   text-gray-300
                   leading-relaxed
-                  group-hover:text-white
-                  transition
                 "
               >
                 Jl. Menayu Lor Plurugan No.112
                 Tirtonirmolo Kasihan,
-                Bantul, DIY
+                Bantul, Daerah Istimewa Yogyakarta
               </p>
             </div>
-          </a>
+          </div>
         </div>
 
         {/* BOTTOM ROW */}
@@ -110,6 +100,7 @@ export default function FooterAds() {
             gap-4
           "
         >
+          {/* COPYRIGHT */}
           <p
             className="
               text-sm
@@ -119,11 +110,13 @@ export default function FooterAds() {
             © 2026 GARMENTO. All rights reserved.
           </p>
 
+          {/* LEGAL LINKS */}
           <div
             className="
               flex
               items-center
               gap-5
+
               text-sm
             "
           >
