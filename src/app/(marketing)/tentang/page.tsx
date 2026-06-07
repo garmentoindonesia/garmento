@@ -8,10 +8,46 @@ import CTATentang from "@/components/sections/Tentang/CTATentang";
 
 import type { Metadata } from "next";
 
+
 export const metadata: Metadata = {
-  title: "Tentang GARMENTO - Produksi Kaos Skala Besar untuk Corporate & Event",
+  title: {
+    default:
+      "Tentang GARMENTO | Produksi Kaos Skala Besar untuk Corporate & Event",
+    template: "%s | GARMENTO",
+  },
+
   description:
     "Jasa produksi kaos custom dan polo shirt berkualitas premium untuk perusahaan, event, komunitas, dan instansi dengan proses produksi terstruktur dan tepat waktu.",
+
+  alternates: {
+    canonical: "/tentang",
+  },
+
+  openGraph: {
+    type: "website",
+    url: "/tentang",
+    title:
+      "Tentang GARMENTO | Produksi Kaos Skala Besar untuk Corporate & Event",
+    description:
+      "Jasa produksi kaos custom dan polo shirt berkualitas premium untuk perusahaan, event, komunitas, dan instansi dengan proses produksi terstruktur dan tepat waktu.",
+    siteName: "GARMENTO",
+    images: [
+      {
+        url: "/og-image-tentang.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Tentang GARMENTO | Produksi Kaos Skala Besar untuk Corporate & Event",
+    description:
+      "Jasa produksi kaos custom dan polo shirt berkualitas premium untuk perusahaan, event, komunitas, dan instansi dengan proses produksi terstruktur dan tepat waktu.",
+    images: ["/og-image-tentang.jpg"],
+  },
 };
 
 export default function TentangPage() {

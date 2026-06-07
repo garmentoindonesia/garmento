@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.garmento.id"),
 
   title: {
-    default: "GARMENTO - Produksi Kaos Skala Besar",
+    default: "GARMENTO | Produksi Kaos Skala Besar",
     template: "%s | GARMENTO",
   },
 
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.garmento.id",
-    title: "GARMENTO - Produksi Kaos Skala Besar",
+    title: "GARMENTO | Produksi Kaos Skala Besar",
     description:
       "Jasa produksi kaos custom & polo shirt skala besar untuk perusahaan, event, dan instansi di Indonesia.",
     siteName: "GARMENTO",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "GARMENTO - Produksi Kaos Skala Besar",
+    title: "GARMENTO | Produksi Kaos Skala Besar",
     description:
       "Jasa produksi kaos custom & polo shirt skala besar untuk perusahaan, event, dan instansi di Indonesia.",
     images: ["/og-image.jpg"],

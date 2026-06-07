@@ -11,10 +11,46 @@ import CTAPPS from "@/components/sections/Layanan/produksi-polo-shirt/CTAPPS";
 
 import type { Metadata } from "next";
 
+
 export const metadata: Metadata = {
-  title: "Produksi Polo Shirt untuk Seragam & Brand Berkualitas - GARMENTO",
+  title: {
+    default:
+      "Produksi Polo Shirt untuk Seragam & Brand Berkualitas | GARMENTO",
+    template: "%s | GARMENTO",
+  },
+
   description:
     "Jasa produksi polo shirt berkualitas premium untuk perusahaan, event, komunitas, brand dan instansi dengan proses produksi terstruktur dan tepat waktu.",
+
+  alternates: {
+    canonical: "/layanan/produksi-polo-shirt",
+  },
+
+  openGraph: {
+    type: "website",
+    url: "/layanan/produksi-polo-shirt",
+    title:
+      "Produksi Polo Shirt untuk Seragam & Brand Berkualitas | GARMENTO",
+    description:
+      "Jasa produksi polo shirt berkualitas premium untuk perusahaan, event, komunitas, brand dan instansi dengan proses produksi terstruktur dan tepat waktu.",
+    siteName: "GARMENTO",
+    images: [
+      {
+        url: "/og-image-pps.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Produksi Polo Shirt untuk Seragam & Brand Berkualitas | GARMENTO",
+    description:
+      "Jasa produksi polo shirt berkualitas premium untuk perusahaan, event, komunitas, brand dan instansi dengan proses produksi terstruktur dan tepat waktu.",
+    images: ["/og-image-pps.jpg"],
+  },
 };
 
 export default function ProduksiPoloShirtPage() {
