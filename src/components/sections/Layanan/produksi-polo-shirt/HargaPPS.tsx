@@ -119,7 +119,7 @@ export default function HargaPPS() {
                 text-transparent
               "
             >
-            Polo Shirt
+            {" "}Polo Shirt
             </span>
           </h2>
 

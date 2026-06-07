@@ -110,7 +110,7 @@ export default function HargaPKC() {
             "
           >
             Harga Produksi
-            
+
             <span 
               className="
                 bg-gradient-to-r
@@ -121,7 +121,7 @@ export default function HargaPKC() {
                 text-transparent
               "
             >
-            Kaos Custom
+            {" "}Kaos Custom
             </span>
           </h2>
 
