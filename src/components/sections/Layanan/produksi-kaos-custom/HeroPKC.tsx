@@ -118,7 +118,7 @@ return (
           flex flex-col
           md:flex-row
 
-          items-center
+          items-start
           md:items-start
 
           gap-3 md:gap-6
@@ -126,7 +126,7 @@ return (
           text-[12px] md:text-sm
           text-white/80
 
-          mx-auto md:mx-0
+          mx-0
         "
       >
         <div className="flex items-center gap-1.5 whitespace-nowrap">
