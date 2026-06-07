@@ -6,6 +6,9 @@ import Footer from "@/components/layout/Footer";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import type { Metadata } from "next";
 
+import { organizationSchema } from "@/lib/schema/organization";
+import { localBusinessSchema } from "@/lib/schema/localBusiness";
+
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-plus-jakarta",
@@ -66,6 +69,19 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
       </body>
     </html>
   );
