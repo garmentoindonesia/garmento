@@ -72,7 +72,7 @@ export default function Portfolio() {
             Hasil Produksi Kami
           </h2>
 
-          <h2
+          <p
               className="
                 text-xl md:text-3xl
                 font-bold text-[#1E4ED8]
@@ -82,7 +82,7 @@ export default function Portfolio() {
           >
             Beberapa hasil produksi untuk klien perusahaan,
             event, dan instansi.
-          </h2>
+          </p>
 
         </div>
 

@@ -32,7 +32,7 @@ export default function Services() {
             Layanan Produksi Kami
           </h2>
 
-          <h2
+          <p
               className="
                 text-xl md:text-3xl
                 font-bold text-[#1E4ED8]
@@ -42,7 +42,7 @@ export default function Services() {
           >
             Solusi produksi apparel untuk berbagai kebutuhan bisnis
             dan event Anda.
-          </h2>
+          </p>
 
         </div>
 

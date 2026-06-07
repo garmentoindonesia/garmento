@@ -46,7 +46,7 @@ export default function Process() {
             Alur Produksi yang Jelas & Terstruktur
           </h2>
 
-          <h2
+          <p
               className="
                 text-xl md:text-3xl
                 font-bold text-[#1E4ED8]
@@ -56,7 +56,7 @@ export default function Process() {
           >
             Setiap pesanan ditangani dengan proses yang terukur
             untuk hasil terbaik.
-          </h2>
+          </p>
 
         </div>
 
