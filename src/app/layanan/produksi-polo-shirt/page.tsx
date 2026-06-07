@@ -1,3 +1,6 @@
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+
 import HeroPPS from "@/components/sections/Layanan/produksi-polo-shirt/HeroPPS";
 import TrustBarPPS from "@/components/sections/Layanan/produksi-polo-shirt/TrustBarPPS";
 import ProductPPS from "@/components/sections/Layanan/produksi-polo-shirt/ProductPPS";
@@ -86,7 +89,7 @@ export const metadata: Metadata = {
 export default function ProduksiPoloShirtPage() {
   return (
     <main className="bg-white">
-
+      <Navbar />
       <HeroPPS />
       <TrustBarPPS />
       <ProductPPS />
@@ -97,6 +100,7 @@ export default function ProduksiPoloShirtPage() {
       <HargaPPS />
       <FAQSection faqs={FAQ_PPS} />
       <CTAPPS />
+      <Footer />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

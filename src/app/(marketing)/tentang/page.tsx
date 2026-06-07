@@ -1,3 +1,5 @@
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import HeroTentang from "@/components/sections/Tentang/HeroTentang";
 import ProfileTentang from "@/components/sections/Tentang/ProfileTentang";
 import VisiMisiTentang from "@/components/sections/Tentang/VisiMisiTentang";
@@ -53,6 +55,7 @@ export const metadata: Metadata = {
 export default function TentangPage() {
   return (
     <>
+      <Navbar />
       <HeroTentang />
       <ProfileTentang />
       <VisiMisiTentang />
@@ -60,6 +63,7 @@ export default function TentangPage() {
       <RoadmapTentang />
       <MarketTentang />
       <CTATentang />
+      <Footer />
     </>
   );
 }

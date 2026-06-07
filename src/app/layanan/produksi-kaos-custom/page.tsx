@@ -1,3 +1,6 @@
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+
 import HeroPKC from "@/components/sections/Layanan/produksi-kaos-custom/HeroPKC";
 import TrustBarPKC from "@/components/sections/Layanan/produksi-kaos-custom/TrustBarPKC";
 import ProductPKC from "@/components/sections/Layanan/produksi-kaos-custom/ProductPKC";
@@ -86,7 +89,7 @@ export const metadata: Metadata = {
 export default function ProduksiKaosCustomPage() {
   return (
     <main className="bg-white">
-
+      <Navbar />
       <HeroPKC />
       <TrustBarPKC />
       <ProductPKC />
@@ -97,6 +100,7 @@ export default function ProduksiKaosCustomPage() {
       <HargaPKC />
       <FAQSection faqs={FAQ_PKC} />
       <CTAPKC />
+      <Footer />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

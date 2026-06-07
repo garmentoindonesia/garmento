@@ -1,3 +1,6 @@
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+
 import HeroBlog from "@/components/blog/HeroBlog";
 import GridBlog from "@/components/blog/GridBlog";
 
@@ -52,8 +55,10 @@ export default function BlogPage() {
 
   return (
     <>
+      <Navbar />
       <HeroBlog />
       <GridBlog posts={posts} />
+      <Footer />
     </>
   );
 }

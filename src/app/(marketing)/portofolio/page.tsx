@@ -1,3 +1,6 @@
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+
 import HeroPortfolio from "@/components/sections/Portofolio/HeroPortfolio";
 import GridPortfolio from "@/components/sections/Portofolio/GridPortfolio";
 import CTAPortfolio from "@/components/sections/Portofolio/CTAPortfolio";
@@ -66,9 +69,11 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
   return (
     <>
+      <Navbar />
       <HeroPortfolio />
       <GridPortfolio />
       <CTAPortfolio />
+      <Footer />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

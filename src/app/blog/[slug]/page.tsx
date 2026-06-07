@@ -1,3 +1,6 @@
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+
 import { notFound } from "next/navigation";
 
 import { compileMDX } from "next-mdx-remote/rsc";
@@ -57,6 +60,7 @@ export default async function BlogDetailPage({
     return (
 
       <main className="bg-white">
+        <Navbar />
 
         <ArticleHero
           category={post.category}
@@ -78,6 +82,7 @@ export default async function BlogDetailPage({
           posts={allPosts}
         />
         
+        <Footer />
       </main>
 
     );
