@@ -6,7 +6,7 @@ const services = [
     image: "/layanancard1.jpg",
     title: "Produksi Kaos Custom",
     desc: "Kaos sablon custom untuk event, komunitas, promosi, dan kebutuhan perusahaan.",
-    tags: ["Sablon Plastisol", "DTG", "DTF", "Rubber"],
+    tags: ["Sablon Plastisol", "DTF", "Polyflex", "Rubber"],
     href: "/layanan/produksi-kaos-custom",
   },
   {
