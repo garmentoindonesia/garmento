@@ -68,7 +68,7 @@ export default function RootLayout({
       <body className={plusJakarta.className}>
         <Navbar />
         {children}
-        <Footer />
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
