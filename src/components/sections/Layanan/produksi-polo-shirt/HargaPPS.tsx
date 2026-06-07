@@ -107,7 +107,20 @@ export default function HargaPPS() {
               tracking-[-0.5px]
             "
           >
-            Harga Produksi Polo Shirt
+            Harga Produksi
+            
+            <span 
+              className="
+                bg-gradient-to-r
+                from-[#20bd5c]
+                to-[#315BFF]
+
+                bg-clip-text
+                text-transparent
+              "
+            >
+            Polo Shirt
+            </span>
           </h2>
 
           <p

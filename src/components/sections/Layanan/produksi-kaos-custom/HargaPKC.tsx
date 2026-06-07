@@ -109,7 +109,20 @@ export default function HargaPKC() {
               tracking-[-0.5px]
             "
           >
-            Harga Produksi Kaos Custom
+            Harga Produksi
+            
+            <span 
+              className="
+                bg-gradient-to-r
+                from-[#20bd5c]
+                to-[#315BFF]
+
+                bg-clip-text
+                text-transparent
+              "
+            >
+            Kaos Custom
+            </span>
           </h2>
 
           <p
