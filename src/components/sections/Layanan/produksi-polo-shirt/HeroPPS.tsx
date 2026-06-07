@@ -24,34 +24,36 @@ backgroundImage: "url('/backgroundPPS.jpg')",
     <div className="animate-fadeLeft">
 
       {/* BADGE */}
-      <div
-        className="
-            inline-flex items-center gap-2
+      <div className="flex justify-center md:justify-start">
+        <div
+          className="
+              inline-flex items-center gap-2
 
-            bg-[#315BFF]/15
-            backdrop-blur-xl
+              bg-[#315BFF]/15
+              backdrop-blur-xl
 
-            border border-white/15
+              border border-white/15
 
-            px-4 py-2
-            rounded-full
+              px-4 py-2
+              rounded-full
 
-            text-white
-            text-xs font-medium
+              text-white
+              text-xs font-medium
 
-            shadow-[0_8px_32px_rgba(49,91,255,0.18)]
-        "
-      >
-        <Image
-          src="/bintang.svg"
-          alt="Bintang"
-          width={16}
-          height={16}
-        />
+              shadow-[0_8px_32px_rgba(49,91,255,0.18)]
+          "
+        >
+          <Image
+            src="/bintang.svg"
+            alt="Bintang"
+            width={16}
+            height={16}
+          />
 
-        <span>Layanan Produksi Polo Shirt</span>
+          <span>Layanan Produksi Polo Shirt</span>
+        </div>
       </div>
-
+      
       <h1
         className="
             mt-6
