@@ -10,7 +10,20 @@ import FAQSection from "@/components/sections/Layanan/FAQSection";
 import { FAQ_PKC } from "@/data/faq/pkc";
 import CTAPKC from "@/components/sections/Layanan/produksi-kaos-custom/CTAPKC";
 
+import { createFAQSchema } from "@/lib/schema/faq";
+import { createServiceSchema } from "@/lib/schema/service";
+
 import type { Metadata } from "next";
+
+const faqSchema = createFAQSchema(FAQ_PKC);
+
+const serviceSchema = createServiceSchema({
+  name: "Produksi Kaos Custom",
+  description:
+    "Jasa produksi kaos custom skala besar untuk perusahaan, event, komunitas, dan instansi.",
+
+  url: "https://www.garmento.id/layanan/produksi-kaos-custom",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -56,6 +69,7 @@ export const metadata: Metadata = {
 export default function ProduksiKaosCustomPage() {
   return (
     <main className="bg-white">
+
       <HeroPKC />
       <TrustBarPKC />
       <ProductPKC />
@@ -66,6 +80,20 @@ export default function ProduksiKaosCustomPage() {
       <HargaPKC />
       <FAQSection faqs={FAQ_PKC} />
       <CTAPKC />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
+      
     </main>
   );
 }

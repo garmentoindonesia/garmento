@@ -10,8 +10,20 @@ import FAQSection from "@/components/sections/Layanan/FAQSection";
 import { FAQ_PPS } from "@/data/faq/pps";
 import CTAPPS from "@/components/sections/Layanan/produksi-polo-shirt/CTAPPS";
 
+import { createFAQSchema } from "@/lib/schema/faq";
+import { createServiceSchema } from "@/lib/schema/service";
+
 import type { Metadata } from "next";
 
+const faqSchema = createFAQSchema(FAQ_PPS);
+
+const serviceSchema = createServiceSchema({
+  name: "Produksi Polo Shirt",
+  description:
+    "Jasa produksi polo shirt berkualitas premium untuk perusahaan, komunitas, event dan instansi.",
+
+  url: "https://www.garmento.id/layanan/produksi-polo-shirt",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -68,6 +80,19 @@ export default function ProduksiPoloShirtPage() {
       <HargaPPS />
       <FAQSection faqs={FAQ_PPS} />
       <CTAPPS />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
       
     </main>
   );
