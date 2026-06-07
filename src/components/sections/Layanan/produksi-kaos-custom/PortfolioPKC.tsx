@@ -9,7 +9,13 @@ const portfolios = [
   "/kaosbika.jpg",
 ];
 
-export default function PortfolioPKC() {
+type PortfolioPKCProps = {
+  adsMode?: boolean;
+};
+
+export default function PortfolioPKC({
+  adsMode = false,
+}: PortfolioPKCProps) {
   return (
     <section className="py-20 md:py-28 bg-white">
 
@@ -109,6 +115,8 @@ export default function PortfolioPKC() {
         </div>
 
         {/* CTA */}
+        {!adsMode && (
+
         <div className="mt-10 flex justify-center">
 
           <Link
@@ -141,6 +149,8 @@ export default function PortfolioPKC() {
           </Link>
 
         </div>
+
+      )}
 
       </div>
 

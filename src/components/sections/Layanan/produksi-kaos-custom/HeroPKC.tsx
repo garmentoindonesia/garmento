@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-export default function HeroPKC() {
+type HeroPKCProps = {
+  adsMode?: boolean;
+};
+
+export default function HeroPKC({
+  adsMode = false,
+}: HeroPKCProps) {
 return (
 <section
   className="
@@ -147,6 +153,7 @@ return (
           href="https://wa.me/6281329269977"
           target="_blank"
           rel="noopener noreferrer"
+          data-event="wa-hero"
           className="
             group
             w-full sm:w-auto
@@ -190,36 +197,38 @@ return (
           />
         </a>
 
-        <a
-          href="/portofolio"
-          className="
-            w-full sm:w-auto
+        {!adsMode && (
+          <a
+            href="/portofolio"
+            className="
+              w-full sm:w-auto
 
-            border border-white/20
-            bg-white/10
-            backdrop-blur-md
+              border border-white/20
+              bg-white/10
+              backdrop-blur-md
 
-            text-white
+              text-white
 
-            px-8 py-4
+              px-8 py-4
 
-            rounded-2xl
+              rounded-2xl
 
-            font-semibold
+              font-semibold
 
-            flex items-center justify-center
+              flex items-center justify-center
 
-            hover:bg-[#1E4ED8]
-            hover:border-[#1E4ED8]
+              hover:bg-[#1E4ED8]
+              hover:border-[#1E4ED8]
 
-            hover:-translate-y-1
-            hover:shadow-lg
+              hover:-translate-y-1
+              hover:shadow-lg
 
-            transition-all duration-300
-          "
-        >
-          Lihat Portofolio
-        </a>
+              transition-all duration-300
+            "
+          >
+            Lihat Portofolio
+          </a>
+        )}
 
       </div>
 

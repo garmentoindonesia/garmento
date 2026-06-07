@@ -9,7 +9,13 @@ const portfolios = [
   "/yogyakartapolo.jpg",
 ];
 
-export default function PortfolioPPS() {
+type PortfolioPPSProps = {
+  adsMode?: boolean;
+};
+
+export default function PortfolioPPS({
+  adsMode = false,
+}: PortfolioPPSProps) {
   return (
     <section className="py-20 md:py-28 bg-white">
 
@@ -109,38 +115,42 @@ export default function PortfolioPPS() {
         </div>
 
         {/* CTA */}
-        <div className="mt-10 flex justify-center">
+        {!adsMode && (
 
-          <Link
-            href="/portofolio"
-            className="
-              inline-flex
-              items-center
-              justify-center
-              gap-3
+          <div className="mt-10 flex justify-center">
 
-              px-8 py-4
+            <Link
+              href="/portofolio"
+              className="
+                inline-flex
+                items-center
+                justify-center
+                gap-3
 
-              rounded-2xl
+                px-8 py-4
 
-              border border-[#113972]/10
+                rounded-2xl
 
-              bg-white
+                border border-[#113972]/10
 
-              text-[#113972]
-              font-semibold
+                bg-white
 
-              hover:bg-[#113972]
-              hover:text-white
+                text-[#113972]
+                font-semibold
 
-              transition-all duration-300
-            "
-          >
-            Lihat Semua Portofolio
-            <span>→</span>
-          </Link>
+                hover:bg-[#113972]
+                hover:text-white
 
-        </div>
+                transition-all duration-300
+              "
+            >
+              Lihat Semua Portofolio
+              <span>→</span>
+            </Link>
+
+          </div>
+
+        )}
 
       </div>
 
