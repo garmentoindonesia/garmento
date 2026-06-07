@@ -48,7 +48,6 @@ export default function Process() {
 
           <p
               className="
-                text-xl md:text-3xl
                 font-bold text-[#1E4ED8]
                 leading-[1.15]
                 tracking-[-0.4px]
