@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function FooterAds() {
@@ -38,6 +39,26 @@ export default function FooterAds() {
         >
           © 2026 GARMENTO. All rights reserved.
         </p>
+
+        <a href="https://maps.app.goo.gl/zfrafA6HVQLBpx7m8" className="flex items-start gap-3 group">
+          <Image src="/map.svg" alt="Map" width={20} height={20} />
+            <div>
+              <p className="text-sm text-white">Rep. Office PT Nusa Garment Indonesia</p>
+              <p className="text-sm text-gray-300 group-hover:text-white transition">
+                Jl. Bintaro Tengah Blok J4 No.12 Bintaro Pesanggrahan, Jakarta Selatan
+              </p>
+            </div>
+        </a>
+
+        <a href="https://maps.app.goo.gl/jLiq3Eev19tLpshH6" className="flex items-start gap-3 group">
+          <Image src="/map.svg" alt="Map" width={20} height={20} />
+            <div>
+              <p className="text-sm text-white">Production Center</p>
+              <p className="text-sm text-gray-300 group-hover:text-white transition">
+                 Jl. Menayu Lor Plurugan No.112 Tirtonirmolo Kasihan, Bantul, Daerah Istimewa Yogyakarta
+              </p>
+            </div>
+        </a>
 
         {/* LEGAL LINKS */}
         <div
