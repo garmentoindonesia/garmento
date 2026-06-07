@@ -6,7 +6,8 @@ import TechniquePPS from "@/components/sections/Layanan/produksi-polo-shirt/Tech
 import ProcessPPS from "@/components/sections/Layanan/produksi-polo-shirt/ProcessPPS";
 import PortfolioPPS from "@/components/sections/Layanan/produksi-polo-shirt/PortfolioPPS";
 import HargaPPS from "@/components/sections/Layanan/produksi-polo-shirt/HargaPPS";
-import FAQPPS from "@/components/sections/Layanan/produksi-polo-shirt/FAQPPS";
+import FAQSection from "@/components/sections/Layanan/FAQSection";
+import { FAQ_PPS } from "@/data/faq/pps";
 import CTAPPS from "@/components/sections/Layanan/produksi-polo-shirt/CTAPPS";
 
 import type { Metadata } from "next";
@@ -65,7 +66,7 @@ export default function ProduksiPoloShirtPage() {
       <ProcessPPS />
       <PortfolioPPS />
       <HargaPPS />
-      <FAQPPS />
+      <FAQSection faqs={FAQ_PPS} />
       <CTAPPS />
       
     </main>

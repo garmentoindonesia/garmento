@@ -6,7 +6,8 @@ import TechniquePKC from "@/components/sections/Layanan/produksi-kaos-custom/Tec
 import ProcessPKC from "@/components/sections/Layanan/produksi-kaos-custom/ProcessPKC";
 import PortfolioPKC from "@/components/sections/Layanan/produksi-kaos-custom/PortfolioPKC";
 import HargaPKC from "@/components/sections/Layanan/produksi-kaos-custom/HargaPKC";
-import FAQPKC from "@/components/sections/Layanan/produksi-kaos-custom/FAQPKC";
+import FAQSection from "@/components/sections/Layanan/FAQSection";
+import { FAQ_PKC } from "@/data/faq/pkc";
 import CTAPKC from "@/components/sections/Layanan/produksi-kaos-custom/CTAPKC";
 
 import type { Metadata } from "next";
@@ -63,7 +64,7 @@ export default function ProduksiKaosCustomPage() {
       <ProcessPKC />
       <PortfolioPKC />
       <HargaPKC />
-      <FAQPKC />
+      <FAQSection faqs={FAQ_PKC} />
       <CTAPKC />
     </main>
   );
