@@ -14,86 +14,150 @@ export default function FooterAds() {
         className="
           max-w-7xl
           mx-auto
-
           px-6
           py-8
 
           flex
           flex-col
-          md:flex-row
+          lg:flex-row
 
-          items-center
           justify-between
-
-          gap-4
+          gap-8
         "
       >
-        
-        {/* ADDRESSES */}
-        <a href="https://maps.app.goo.gl/zfrafA6HVQLBpx7m8" className="flex items-start gap-3 group">
-          <Image src="/map.svg" alt="Map" width={20} height={20} />
+        {/* LEFT SIDE - ADDRESSES */}
+        <div className="flex flex-col gap-5 flex-1">
+
+          <a
+            href="https://maps.app.goo.gl/zfrafA6HVQLBpx7m8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start gap-3 group"
+          >
+            <Image
+              src="/map.svg"
+              alt="Map"
+              width={20}
+              height={20}
+              className="mt-1 shrink-0"
+            />
+
             <div>
-              <p className="text-sm text-white">Rep. Office PT Nusa Garment Indonesia</p>
-              <p className="text-sm text-gray-300 group-hover:text-white transition">
-                Jl. Bintaro Tengah Blok J4 No.12 Bintaro Pesanggrahan, Jakarta Selatan
+              <p className="text-sm font-medium text-white">
+                Rep. Office PT Nusa Garment Indonesia
+              </p>
+
+              <p
+                className="
+                  text-sm
+                  text-gray-300
+                  leading-relaxed
+                  group-hover:text-white
+                  transition
+                "
+              >
+                Jl. Bintaro Tengah Blok J4 No.12 Bintaro
+                Pesanggrahan, Jakarta Selatan
               </p>
             </div>
-        </a>
+          </a>
 
-        <a href="https://maps.app.goo.gl/jLiq3Eev19tLpshH6" className="flex items-start gap-3 group">
-          <Image src="/map.svg" alt="Map" width={20} height={20} />
+          <a
+            href="https://maps.app.goo.gl/jLiq3Eev19tLpshH6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start gap-3 group"
+          >
+            <Image
+              src="/map.svg"
+              alt="Map"
+              width={20}
+              height={20}
+              className="mt-1 shrink-0"
+            />
+
             <div>
-              <p className="text-sm text-white">Production Center</p>
-              <p className="text-sm text-gray-300 group-hover:text-white transition">
-                 Jl. Menayu Lor Plurugan No.112 Tirtonirmolo Kasihan, Bantul, Daerah Istimewa Yogyakarta
+              <p className="text-sm font-medium text-white">
+                Production Center
+              </p>
+
+              <p
+                className="
+                  text-sm
+                  text-gray-300
+                  leading-relaxed
+                  group-hover:text-white
+                  transition
+                "
+              >
+                Jl. Menayu Lor Plurugan No.112
+                Tirtonirmolo Kasihan, Bantul,
+                Daerah Istimewa Yogyakarta
               </p>
             </div>
-        </a>
+          </a>
 
-        {/* COPYRIGHT */}
-        <p
-          className="
-            text-sm
-            text-gray-400
-            text-center
-            md:text-left
-          "
-        >
-          © 2026 GARMENTO. All rights reserved.
-        </p>
+        </div>
 
-        {/* LEGAL LINKS */}
+        {/* RIGHT SIDE */}
         <div
           className="
             flex
-            items-center
+            flex-col
 
-            gap-5
+            items-start
+            lg:items-end
 
-            text-sm
+            gap-4
+
+            pt-2
           "
         >
-          <Link
-            href="/privacy-policy"
+          {/* COPYRIGHT */}
+          <p
             className="
+              text-sm
               text-gray-400
-              hover:text-white
-              transition
-            "
-          >
-            Privacy Policy
-          </Link>
 
-          <Link
-            href="/terms-of-service"
-            className="
-              text-gray-400
-              hover:text-white
-              transition
+              text-left
+              lg:text-right
             "
           >
-            Terms of Service
-          </Link>
+            © 2026 GARMENTO. All rights reserved.
+          </p>
+
+          {/* LEGAL LINKS */}
+          <div
+            className="
+              flex
+              flex-wrap
+              gap-5
+
+              text-sm
+            "
+          >
+            <Link
+              href="/privacy-policy"
+              className="
+                text-gray-400
+                hover:text-white
+                transition
+              "
+            >
+              Privacy Policy
+            </Link>
+
+            <Link
+              href="/terms-of-service"
+              className="
+                text-gray-400
+                hover:text-white
+                transition
+              "
+            >
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
