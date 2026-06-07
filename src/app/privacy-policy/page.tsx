@@ -1,6 +1,3 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,7 +8,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-28">
-      <Navbar />
+      
       <h1 className="text-4xl font-bold text-[#113972]">
         Privacy Policy
       </h1>
@@ -54,7 +51,7 @@ export default function PrivacyPolicyPage() {
         </ul>
 
       </div>
-      <Footer />
+      
     </main>
   );
 }
