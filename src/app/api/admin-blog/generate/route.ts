@@ -105,7 +105,7 @@ Artikel harus masuk salah satu:
 
     return NextResponse.json({
       success: true,
-      prompt,
+      content: prompt,
     });
 
   } catch {
