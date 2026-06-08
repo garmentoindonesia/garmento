@@ -162,43 +162,39 @@ export default function AdminBlogPage() {
         </section>
 
         {/* Actions */}
-        <div className="sticky bottom-4">
-          <div className="bg-white border border-slate-200 rounded-2xl shadow-lg p-4">
-            <div className="flex flex-col sm:flex-row gap-3 justify-end">
-              <button
-                className="
-                  px-5
-                  py-3
-                  rounded-xl
-                  border
-                  border-slate-300
-                  bg-white
-                  font-medium
-                  cursor-pointer
-                  hover:bg-slate-50
-                  transition
-                "
-              >
-                Save Draft
-              </button>
+        <div className="flex flex-col sm:flex-row gap-3 justify-end mt-8">
+        <button
+            className="
+            px-5
+            py-3
+            rounded-xl
+            border
+            border-slate-300
+            bg-white
+            font-medium
+            cursor-pointer
+            hover:bg-slate-50
+            transition
+            "
+        >
+            Save Draft
+        </button>
 
-              <button
-                className="
-                  px-5
-                  py-3
-                  rounded-xl
-                  bg-slate-900
-                  text-white
-                  font-medium
-                  cursor-pointer
-                  hover:bg-slate-800
-                  transition
-                "
-              >
-                Publish
-              </button>
-            </div>
-          </div>
+        <button
+            className="
+            px-5
+            py-3
+            rounded-xl
+            bg-slate-900
+            text-white
+            font-medium
+            cursor-pointer
+            hover:bg-slate-800
+            transition
+            "
+        >
+            Publish
+        </button>
         </div>
 
       </div>
