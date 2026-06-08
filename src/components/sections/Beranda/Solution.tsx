@@ -118,10 +118,11 @@ export default function Solution() {
                 tracking-[-0.4px]
 
                 text-center md:text-left
+
+                md:mt-4
               "
             >
               Bagian dari PT Nusa Garment Indonesia
-
             </h3>
 
             <p
