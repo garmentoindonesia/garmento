@@ -89,8 +89,6 @@ return (
           {" "}Skala Besar,
         </span>
 
-        <br />
-
         untuk Event & Seragam
       </h1>
 
