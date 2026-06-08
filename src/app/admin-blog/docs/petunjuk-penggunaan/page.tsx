@@ -41,12 +41,12 @@ export default function PetunjukPenggunaanPage() {
               <li>Review isi artikel di MDX Editor:
                 <ul><li>jangan ubah format mdx seperti tanda ##, ---, **, []</li></ul>
                 <ul><li>pastikan nama file jpg sesuai dengan format topik.mmddyy.hh.mm.jpg</li></ul>
-                <ul><li>contoh: hargakaos.080626.16.58.jpg</li></ul>
+                <ul><li>contoh: harga-kaos-custom-100-pcs-080626-1658.jpg</li></ul>
               </li>
               <li>Buat cover image.</li>
               <li>Upload cover image:
                 <ul><li>pastikan nama file jpg sesuai dengan format di MDX Editor</li></ul>
-                <ul><li>contoh: hargakaos.080626.16.58.jpg</li></ul>
+                <ul><li>contoh: harga-kaos-custom-100-pcs-080626-1658.jpg</li></ul>
               </li>
               <li>Klik Publish.</li>
             </ol>

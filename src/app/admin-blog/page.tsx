@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 function InfoButton({ title }: { title: string }) {
   return (
@@ -56,6 +56,15 @@ export default function AdminBlogPage() {
   const [slug, setSlug] = useState("");
   const [content, setContent] = useState("");
   const [coverFile, setCoverFile] = useState<File | null>(null);
+
+  const [generating, setGenerating] =
+    useState(false);
+
+  const [publishing, setPublishing] =
+    useState(false);
+
+  const fileInputRef =
+    useRef<HTMLInputElement>(null);
   
 async function handleLogout() {
   await fetch("/api/logout", {
@@ -64,6 +73,56 @@ async function handleLogout() {
 
   router.push("/login");
   router.refresh();
+}
+
+async function handleGenerate() {
+  try {
+
+    if (!slug.trim()) {
+      alert("Isi slug terlebih dahulu");
+      return;
+    }
+
+    setGenerating(true);
+
+    const response = await fetch(
+      "/api/admin-blog/generate",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type":
+            "application/json",
+        },
+        body: JSON.stringify({
+          slug,
+        }),
+      }
+    );
+
+    const data =
+      await response.json();
+
+    if (!response.ok) {
+      throw new Error(
+        data.message
+      );
+    }
+
+    setContent(data.content);
+
+  } catch (error) {
+
+    alert(
+      error instanceof Error
+        ? error.message
+        : "Generate gagal"
+    );
+
+  } finally {
+
+    setGenerating(false);
+
+  }
 }
 
 async function handleSaveMDX() {
@@ -143,6 +202,8 @@ async function handleUploadCover() {
 async function handlePublish() {
   try {
 
+    setPublishing(true);
+
     if (!slug) {
       alert("Isi slug terlebih dahulu");
       return;
@@ -164,9 +225,25 @@ async function handlePublish() {
 
     alert("Artikel berhasil dipublish");
 
-  } catch {
+    setSlug("");
+    setContent("");
+    setCoverFile(null);
 
-    alert("Publish gagal");
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
+    }
+
+  } catch (error) {
+
+    if (error instanceof Error) {
+      alert(error.message);
+    } else {
+      alert("Publish gagal");
+    }
+
+  } finally {
+
+    setPublishing(false);
 
   }
 }
@@ -271,6 +348,8 @@ async function handlePublish() {
           </div>
 
           <button
+            onClick={handleGenerate}
+            disabled={generating}
             className="
               inline-flex
               items-center
@@ -284,10 +363,13 @@ async function handlePublish() {
               cursor-pointer
               transition
               hover:bg-slate-800
-              active:scale-[0.98]
+              disabled:opacity-50
+              disabled:cursor-not-allowed
             "
           >
-            Generate Artikel
+            {generating
+              ? "Generating..."
+              : "Generate Artikel"}
           </button>
         </section>
 
@@ -298,11 +380,12 @@ async function handlePublish() {
                 Cover Image
             </h2>
 
-            <InfoButton title="Upload cover JPG dengan ukuran rekomendasi 1600 × 900 px dengan format nama file: topik.mmddyy.hh.mm." />
+            <InfoButton title="Upload cover JPG dengan ukuran rekomendasi 1600 × 900 px dengan format nama file: slug.mmddyy.hh.mm." />
           </div>
 
           <div className="rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 p-6">
             <input
+              ref={fileInputRef}
               type="file"
               accept=".jpg,.jpeg"
               onChange={(e) => {
@@ -343,7 +426,7 @@ async function handlePublish() {
               text-slate-500
             "
           >
-            Contoh: hargakaos.080626.16.58.jpg
+            Contoh: harga-kaos-custom-100-pcs-080626-1658.jpg
           </p>
           
         </section>
@@ -394,6 +477,7 @@ async function handlePublish() {
 
                 <button
                   onClick={handlePublish}
+                  disabled={publishing}
                   className="
                     px-8
                     py-3
@@ -401,12 +485,13 @@ async function handlePublish() {
                     bg-slate-900
                     text-white
                     font-medium
-                    cursor-pointer
-                    hover:bg-slate-800
                     transition
+                    disabled:opacity-50
+                    disabled:cursor-not-allowed
+                    hover:bg-slate-800
                   "
                 >
-                  Publish
+                  {publishing ? "Publishing..." : "Publish"}
                 </button>
             </div>
           </div>
