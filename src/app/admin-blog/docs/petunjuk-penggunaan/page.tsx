@@ -40,7 +40,7 @@ export default function PetunjukPenggunaanPage() {
               <li>Tunggu artikel selesai dibuat.</li>
               <li>Review isi artikel di MDX Editor:
                 <ul><li>jangan ubah format mdx seperti tanda ##, ---, **, []</li></ul>
-                <ul><li>pastikan nama file jpg sesuai dengan format topik.mmddyy.hh.mm</li></ul>
+                <ul><li>pastikan nama file jpg sesuai dengan format topik.mmddyy.hh.mm.jpg</li></ul>
                 <ul><li>contoh: hargakaos.080626.16.58.jpg</li></ul>
               </li>
               <li>Buat cover image.</li>
