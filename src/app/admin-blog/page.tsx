@@ -63,22 +63,9 @@ async function handleLogout() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <div className="max-w-5xl mx-auto px-5 py-10 md:py-14">
-
-        {/* Logo */}
-        <div className="flex justify-center mb-2">
-          <Image
-            src="/logoheadernavy.png"
-            alt="GARMENTO"
-            width={220}
-            height={60}
-            priority
-          />
-        </div>
-
-        {/* Heading */}
-        <div className="relative mt-8 mb-10">
-
-          <div className="flex justify-end mb-6">
+        
+        {/* Logout */}
+        <div className="flex justify-end mb-6">
             <button
               onClick={handleLogout}
               className="
@@ -99,6 +86,22 @@ async function handleLogout() {
               Logout
             </button>
           </div>
+        
+        {/* Logo */}
+        <div className="flex justify-center mb-2">
+          <Image
+            src="/logoheadernavy.png"
+            alt="GARMENTO"
+            width={220}
+            height={60}
+            priority
+          />
+        </div>
+
+        {/* Heading */}
+        <div className="relative mt-8 mb-10">
+
+          
 
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
