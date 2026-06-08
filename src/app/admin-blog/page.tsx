@@ -55,6 +55,7 @@ export default function AdminBlogPage() {
 
   const [slug, setSlug] = useState("");
   const [content, setContent] = useState("");
+  const [coverFile, setCoverFile] = useState<File | null>(null);
   
 async function handleLogout() {
   await fetch("/api/logout", {
@@ -94,6 +95,55 @@ async function handleSaveDraft() {
 
     alert(
       "Terjadi kesalahan saat menyimpan."
+    );
+
+  }
+}
+
+async function handleUploadCover() {
+  try {
+
+    if (!slug) {
+      alert("Isi slug terlebih dahulu");
+      return;
+    }
+
+    if (!coverFile) {
+      alert("Pilih cover image");
+      return;
+    }
+
+    const formData =
+      new FormData();
+
+    formData.append(
+      "slug",
+      slug
+    );
+
+    formData.append(
+      "file",
+      coverFile
+    );
+
+    const response =
+      await fetch(
+        "/api/admin-blog/upload",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+    const data =
+      await response.json();
+
+    alert(data.message);
+
+  } catch {
+
+    alert(
+      "Gagal upload cover"
     );
 
   }
@@ -233,6 +283,13 @@ async function handleSaveDraft() {
             <input
               type="file"
               accept=".jpg,.jpeg"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+
+                if (!file) return;
+
+                setCoverFile(file);
+              }}
               className="
                 block
                 w-full
@@ -250,6 +307,22 @@ async function handleSaveDraft() {
                 hover:file:bg-slate-800
               "
             />
+
+            <button
+              onClick={handleUploadCover}
+              className="
+                mt-4
+                px-4
+                py-2
+                rounded-lg
+                bg-slate-900
+                text-white
+                text-sm
+              "
+            >
+              Upload Cover
+            </button>
+
           </div>
         </section>
 
