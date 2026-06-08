@@ -162,40 +162,50 @@ export default function AdminBlogPage() {
         </section>
 
         {/* Actions */}
-        <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row gap-3 justify-center">
-        <button
-            className="
-            px-5
-            py-3
-            rounded-xl
-            border
-            border-slate-300
-            bg-white
-            font-medium
-            cursor-pointer
-            hover:bg-slate-50
-            transition
-            "
-        >
-            Save Draft
-        </button>
+        <section className="bg-white rounded-3xl border border-slate-200 p-6 md:p-7 shadow-sm">
+        <h2 className="text-lg font-semibold text-slate-900 mb-1">
+            Actions
+        </h2>
 
-        <button
-        className="
-            px-8
-            py-3
-            rounded-xl
-            bg-slate-900
-            text-white
-            font-medium
-            cursor-pointer
-            hover:bg-slate-800
-            transition
-        "
-        >
-        Publish
-        </button>
+        <p className="text-sm text-slate-500 mb-5">
+            Simpan artikel sebagai draft atau langsung publish ke blog.
+        </p>
+
+        <div className="flex flex-col sm:flex-row justify-center gap-3">
+            <button
+            className="
+                px-5
+                py-3
+                rounded-xl
+                border
+                border-slate-300
+                bg-white
+                font-medium
+                cursor-pointer
+                hover:bg-slate-50
+                transition
+            "
+            >
+            Save Draft
+            </button>
+
+            <button
+            className="
+                px-6
+                py-3
+                rounded-xl
+                bg-slate-900
+                text-white
+                font-medium
+                cursor-pointer
+                hover:bg-slate-800
+                transition
+            "
+            >
+            Publish
+            </button>
         </div>
+        </section>
 
       </div>
     </main>
