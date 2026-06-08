@@ -71,23 +71,18 @@ async function handleLogout() {
             className="
               inline-flex
               items-center
-              gap-2
               px-4
               py-2.5
               rounded-xl
-              border
-              border-red-200
-              bg-white
-              text-red-600
+              bg-slate-900
+              text-white
               text-sm
               font-semibold
               cursor-pointer
-              shadow-sm
               transition-all
               duration-200
-              hover:bg-red-50
-              hover:border-red-300
-              hover:shadow-md
+              hover:bg-slate-800
+              hover:shadow-lg
               active:scale-[0.98]
             "
           >
