@@ -65,28 +65,35 @@ async function handleLogout() {
       <div className="max-w-5xl mx-auto px-5 py-10 md:py-14">
 
         {/* Logout */}
-        <div className="flex justify-end mb-6">
-            <button
-              onClick={handleLogout}
-              className="
-                px-4
-                py-2
-                rounded-xl
-                border
-                border-red
-                bg-red-50
-                text-red
-                text-sm
-                font-medium
-                font-bold
-                cursor-pointer
-                hover:bg-red-100
-                transition
-              "
-            >
-              Logout
-            </button>
-          </div>
+        <div className="flex justify-end mb-8">
+          <button
+            onClick={handleLogout}
+            className="
+              inline-flex
+              items-center
+              gap-2
+              px-4
+              py-2.5
+              rounded-xl
+              border
+              border-red-200
+              bg-white
+              text-red-600
+              text-sm
+              font-semibold
+              cursor-pointer
+              shadow-sm
+              transition-all
+              duration-200
+              hover:bg-red-50
+              hover:border-red-300
+              hover:shadow-md
+              active:scale-[0.98]
+            "
+          >
+            Logout
+          </button>
+        </div>
         
         {/* Logo */}
         <div className="flex justify-center mb-2">
@@ -101,8 +108,6 @@ async function handleLogout() {
 
         {/* Heading */}
         <div className="relative mt-8 mb-10">
-
-          
 
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
