@@ -74,15 +74,18 @@ async function handleLogout() {
               px-4
               py-2.5
               rounded-xl
-              bg-slate-900
-              text-white
+              border
+              border-slate-300
+              bg-white
+              text-slate-700
               text-sm
               font-semibold
               cursor-pointer
               transition-all
               duration-200
-              hover:bg-slate-800
-              hover:shadow-lg
+              hover:bg-slate-50
+              hover:border-slate-400
+              hover:shadow-md
               active:scale-[0.98]
             "
           >
