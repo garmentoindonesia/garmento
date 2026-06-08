@@ -6,16 +6,14 @@ export default function AdminBlogPage() {
       <div className="max-w-5xl mx-auto px-5 py-10 md:py-14">
 
         {/* Logo */}
-        <div className="flex justify-center">
-          <div className="bg-white border border-slate-200 rounded-2xl px-8 py-5 shadow-sm">
-            <Image
-              src="/logoheadernavy.png"
-              alt="GARMENTO"
-              width={220}
-              height={60}
-              priority
-            />
-          </div>
+        <div className="flex justify-center mb-2">
+          <Image
+            src="/logoheadernavy.png"
+            alt="GARMENTO"
+            width={220}
+            height={60}
+            priority
+          />
         </div>
 
         {/* Heading */}
@@ -81,6 +79,7 @@ export default function AdminBlogPage() {
               bg-slate-900
               text-white
               font-medium
+              cursor-pointer
               transition
               hover:bg-slate-800
               active:scale-[0.98]
@@ -104,7 +103,22 @@ export default function AdminBlogPage() {
             <input
               type="file"
               accept=".jpg,.jpeg"
-              className="block w-full text-sm"
+              className="
+                block
+                w-full
+                text-sm
+                cursor-pointer
+                file:cursor-pointer
+                file:mr-4
+                file:px-4
+                file:py-2
+                file:rounded-lg
+                file:border-0
+                file:bg-slate-900
+                file:text-white
+                file:font-medium
+                hover:file:bg-slate-800
+              "
             />
           </div>
 
@@ -160,6 +174,7 @@ export default function AdminBlogPage() {
                   border-slate-300
                   bg-white
                   font-medium
+                  cursor-pointer
                   hover:bg-slate-50
                   transition
                 "
@@ -175,6 +190,7 @@ export default function AdminBlogPage() {
                   bg-slate-900
                   text-white
                   font-medium
+                  cursor-pointer
                   hover:bg-slate-800
                   transition
                 "
