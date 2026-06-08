@@ -5,7 +5,7 @@ function InfoButton({ title }: { title: string }) {
   return (
     <div className="relative group">
       <Image
-        src="/tooltips.svg"
+        src="/tooltip2.svg"
         alt="Info"
         width={16}
         height={16}
