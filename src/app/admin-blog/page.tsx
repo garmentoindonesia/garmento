@@ -63,7 +63,7 @@ async function handleLogout() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <div className="max-w-5xl mx-auto px-5 py-10 md:py-14">
-        
+
         {/* Logout */}
         <div className="flex justify-end mb-6">
             <button
@@ -73,11 +73,12 @@ async function handleLogout() {
                 py-2
                 rounded-xl
                 border
-                border-red-200
+                border-red
                 bg-red-50
-                text-red-600
+                text-red
                 text-sm
                 font-medium
+                font-bold
                 cursor-pointer
                 hover:bg-red-100
                 transition
