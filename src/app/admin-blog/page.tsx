@@ -63,7 +63,37 @@ export default function AdminBlogPage() {
         </div>
 
         {/* Heading */}
-        <div className="text-center mt-8 mb-10">
+        <div className="relative text-center mt-8 mb-10">
+
+          <button
+            onClick={async () => {
+              await fetch("/api/logout", {
+                method: "POST",
+              });
+
+              window.location.href = "/login";
+            }}
+            className="
+              absolute
+              right-0
+              top-0
+              px-4
+              py-2
+              rounded-xl
+              border
+              border-red-200
+              bg-red-50
+              text-red-600
+              text-sm
+              font-medium
+              cursor-pointer
+              hover:bg-red-100
+              transition
+            "
+          >
+            Logout
+          </button>
+
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
             GARMENTO AI Blog Dashboard
           </h1>
@@ -71,6 +101,7 @@ export default function AdminBlogPage() {
           <p className="mt-3 text-slate-500 text-sm md:text-base">
             Generate artikel MDX, upload cover image, dan publish ke blog.
           </p>
+
         </div>
 
         {/* Slug */}
