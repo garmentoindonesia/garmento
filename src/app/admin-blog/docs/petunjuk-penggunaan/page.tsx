@@ -42,9 +42,10 @@ export default function PetunjukPenggunaanPage() {
                 <ul><li>contoh: hargakaos.080626.16.58.jpg</li></ul>
               </li>
               <li>Buat cover image.</li>
-              <li>Upload cover image.</li>
+              <li>Upload cover image:
                 <ul><li>pastikan nama file jpg sesuai dengan format di MDX Editor</li></ul>
                 <ul><li>contoh: hargakaos.080626.16.58.jpg</li></ul>
+              </li>
               <li>Klik Publish.</li>
             </ol>
 
