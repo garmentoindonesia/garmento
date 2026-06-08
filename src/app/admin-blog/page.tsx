@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function InfoButton({ title }: { title: string }) {
   return (
@@ -47,6 +50,16 @@ function InfoButton({ title }: { title: string }) {
 }
 
 export default function AdminBlogPage() {
+  const router = useRouter();
+
+async function handleLogout() {
+  await fetch("/api/logout", {
+    method: "POST",
+  });
+
+  router.push("/login");
+  router.refresh();
+}
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <div className="max-w-5xl mx-auto px-5 py-10 md:py-14">
@@ -63,44 +76,39 @@ export default function AdminBlogPage() {
         </div>
 
         {/* Heading */}
-        <div className="relative text-center mt-8 mb-10">
+        <div className="relative mt-8 mb-10">
 
-          <button
-            onClick={async () => {
-              await fetch("/api/logout", {
-                method: "POST",
-              });
+          <div className="flex justify-end mb-6">
+            <button
+              onClick={handleLogout}
+              className="
+                px-4
+                py-2
+                rounded-xl
+                border
+                border-red-200
+                bg-red-50
+                text-red-600
+                text-sm
+                font-medium
+                cursor-pointer
+                hover:bg-red-100
+                transition
+              "
+            >
+              Logout
+            </button>
+          </div>
 
-              window.location.href = "/login";
-            }}
-            className="
-              absolute
-              right-0
-              top-0
-              px-4
-              py-2
-              rounded-xl
-              border
-              border-red-200
-              bg-red-50
-              text-red-600
-              text-sm
-              font-medium
-              cursor-pointer
-              hover:bg-red-100
-              transition
-            "
-          >
-            Logout
-          </button>
+          <div className="text-center">
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+              GARMENTO AI Blog Dashboard
+            </h1>
 
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
-            GARMENTO AI Blog Dashboard
-          </h1>
-
-          <p className="mt-3 text-slate-500 text-sm md:text-base">
-            Generate artikel MDX, upload cover image, dan publish ke blog.
-          </p>
+            <p className="mt-3 text-slate-500 text-sm md:text-base">
+              Generate artikel MDX, upload cover image, dan publish ke blog.
+            </p>
+          </div>
 
         </div>
 
