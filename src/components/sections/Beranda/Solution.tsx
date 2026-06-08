@@ -113,7 +113,7 @@ export default function Solution() {
             <h3
               className="
                 text-m md:text-xl
-                font-bold text-[#1E4ED8]
+                font-bold text-[#000000]/60
                 leading-[1.15]
                 tracking-[-0.4px]
 
