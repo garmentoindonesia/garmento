@@ -74,7 +74,7 @@ return (
             text-left
         "
       >
-        Produksi Kaos Custom
+        Produksi Kaos Custom Premium
 
         <span 
           className="
@@ -91,7 +91,7 @@ return (
 
         <br />
 
-        dengan Kualitas Premium untuk Event & Seragam
+        untuk Event & Seragam
       </h1>
 
       <p
