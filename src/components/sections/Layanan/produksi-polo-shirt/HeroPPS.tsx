@@ -86,7 +86,7 @@ backgroundImage: "url('/backgroundPPS.jpg')",
             text-transparent
           "
         >
-          {" "}Skala Besar,
+          {" "}Skala Besar
         </span>
 
         <br />

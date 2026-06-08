@@ -86,7 +86,7 @@ return (
             text-transparent
           "
         >
-          {" "}Skala Besar,
+          {" "}Skala Besar{" "}
         </span>
 
         untuk Event & Seragam
