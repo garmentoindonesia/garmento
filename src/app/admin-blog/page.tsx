@@ -308,6 +308,8 @@ async function handleUploadCover() {
               "
             />
 
+          </div>
+
             <button
               onClick={handleUploadCover}
               className="
@@ -323,7 +325,6 @@ async function handleUploadCover() {
               Upload Cover
             </button>
 
-          </div>
         </section>
 
         {/* MDX Editor */}
