@@ -86,12 +86,12 @@ return (
             text-transparent
           "
         >
-          {" "}Premium,
+          {" "}Skala Besar,
         </span>
 
         <br />
 
-        untuk Event & Seragam
+        dengan Kualitas Premium untuk Event & Seragam
       </h1>
 
       <p

@@ -86,12 +86,12 @@ backgroundImage: "url('/backgroundPPS.jpg')",
             text-transparent
           "
         >
-          {" "}Premium,
+          {" "}Premium Skala Besar,
         </span>
 
         <br />
 
-        untuk Seragam & Brand
+        untuk Seragam Kantor & Brand
       </h1>
 
       <p

@@ -34,6 +34,8 @@ export default function PetunjukPenggunaanPage() {
               <li>Pilih slug artikel dari menu "99 Master List Slug".</li>
               <li>Copy slug yang akan dibuat.</li>
               <li>Paste slug ke kolom Slug Artikel.</li>
+              <li>Tambahkan format penamaan slug-ddmmyy-hhmm</li>
+                <ul><li>contoh: harga-kaos-custom-100-pcs-080626-1658</li></ul>
               <li>Klik tombol Generate Artikel.</li>
               <li>Tunggu artikel selesai dibuat.</li>
               <li>Review isi artikel di MDX Editor:
@@ -54,7 +56,7 @@ export default function PetunjukPenggunaanPage() {
             <h2>Langkah 1 — Memilih Slug</h2>
 
             <p>
-              Buka menu:
+              Buka docs:
             </p>
 
             <pre>
@@ -229,6 +231,7 @@ export default function PetunjukPenggunaanPage() {
               <li>✓ Slug sudah benar.</li>
               <li>✓ Artikel sudah muncul lengkap.</li>
               <li>✓ Tidak ada error tulisan.</li>
+              <li>✓ Nama file jpg sesuai dengan format topik.mmddyy.hh.mm baik di MDX Editor maupun file yg akan diupload</li>
               <li>✓ Cover image sudah diupload.</li>
               <li>✓ Cover sesuai topik.</li>
               <li>✓ Belum pernah membuat slug yang sama.</li>
@@ -239,8 +242,7 @@ export default function PetunjukPenggunaanPage() {
             <h2>Target Kerja Harian</h2>
 
             <ul>
-              <li>Minimal 3 artikel per hari.</li>
-              <li>Ideal 5 artikel per hari.</li>
+              <li>Minimal 1 artikel per hari.</li>
               <li>Fokus kualitas dan konsistensi.</li>
             </ul>
 

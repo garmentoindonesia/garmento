@@ -243,14 +243,14 @@ async function handlePublish() {
                 Slug Artikel
             </h2>
 
-            <InfoButton title="Masukkan slug artikel yang akan digunakan sebagai URL." />
+            <InfoButton title="Masukkan slug artikel yang akan digunakan sebagai URL dengan format slug-ddmmyy-hhmm." />
           </div>
 
           <input
             value={slug}
             onChange={(e) => setSlug(e.target.value)}
             type="text"
-            placeholder="contoh: harga-kaos-custom-100-pcs"
+            placeholder="contoh: harga-kaos-custom-100-pcs-080626-1658"
             className="
               w-full
               rounded-xl
@@ -382,7 +382,7 @@ async function handlePublish() {
                 Actions
                 </h2>
 
-                <InfoButton title="Simpan sebagai draft atau langsung publish ke blog." />
+                <InfoButton title="Klik langsung publish ke blog." />
             </div>
 
             <div className="flex flex-col sm:flex-row justify-center gap-3">
