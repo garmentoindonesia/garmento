@@ -310,21 +310,6 @@ async function handleUploadCover() {
 
           </div>
 
-            <button
-              onClick={handleUploadCover}
-              className="
-                mt-4
-                px-4
-                py-2
-                rounded-lg
-                bg-slate-900
-                text-white
-                text-sm
-              "
-            >
-              Upload Cover
-            </button>
-
         </section>
 
         {/* MDX Editor */}
