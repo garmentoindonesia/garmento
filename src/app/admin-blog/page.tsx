@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 function InfoButton({ title }: { title: string }) {
   return (
@@ -52,6 +53,9 @@ function InfoButton({ title }: { title: string }) {
 export default function AdminBlogPage() {
   const router = useRouter();
 
+  const [slug, setSlug] = useState("");
+  const [content, setContent] = useState("");
+  
 async function handleLogout() {
   await fetch("/api/logout", {
     method: "POST",
@@ -60,6 +64,41 @@ async function handleLogout() {
   router.push("/login");
   router.refresh();
 }
+
+async function handleSaveDraft() {
+  try {
+
+    const response = await fetch(
+      "/api/admin-blog/save",
+      {
+        method: "POST",
+
+        headers: {
+          "Content-Type":
+            "application/json",
+        },
+
+        body: JSON.stringify({
+          slug,
+          content,
+        }),
+      }
+    );
+
+    const data =
+      await response.json();
+
+    alert(data.message);
+
+  } catch {
+
+    alert(
+      "Terjadi kesalahan saat menyimpan."
+    );
+
+  }
+}
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <div className="max-w-5xl mx-auto px-5 py-10 md:py-14">
@@ -127,6 +166,8 @@ async function handleLogout() {
           </div>
 
           <input
+            value={slug}
+            onChange={(e) => setSlug(e.target.value)}
             type="text"
             placeholder="contoh: harga-kaos-custom-100-pcs"
             className="
@@ -223,6 +264,8 @@ async function handleLogout() {
           </div>
 
           <textarea
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
             placeholder="Hasil artikel dari Gemini akan muncul di sini..."
             className="
               w-full
@@ -254,20 +297,21 @@ async function handleLogout() {
 
             <div className="flex flex-col sm:flex-row justify-center gap-3">
                 <button
-                    className="
-                        px-5
-                        py-3
-                        rounded-xl
-                        border
-                        border-slate-300
-                        bg-white
-                        font-medium
-                        cursor-pointer
-                        hover:bg-slate-50
-                        transition
-                    "
+                  onClick={handleSaveDraft}
+                  className="
+                    px-5
+                    py-3
+                    rounded-xl
+                    border
+                    border-slate-300
+                    bg-white
+                    font-medium
+                    cursor-pointer
+                    hover:bg-slate-50
+                    transition
+                  "
                 >
-                    Save Draft
+                  Save Draft
                 </button>
 
                 <button
