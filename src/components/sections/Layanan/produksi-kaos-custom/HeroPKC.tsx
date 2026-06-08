@@ -74,7 +74,7 @@ return (
             text-left
         "
       >
-        Produksi Kaos Custom Premium
+        Produksi Kaos Custom
 
         <span 
           className="

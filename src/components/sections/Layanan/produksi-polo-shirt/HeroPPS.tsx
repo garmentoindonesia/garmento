@@ -74,7 +74,7 @@ backgroundImage: "url('/backgroundPPS.jpg')",
             text-left
         "
       >
-        Produksi Polo Shirt Kualitas
+        Produksi Polo Shirt
 
         <span 
           className="
@@ -86,7 +86,7 @@ backgroundImage: "url('/backgroundPPS.jpg')",
             text-transparent
           "
         >
-          {" "}Premium Skala Besar,
+          {" "}Skala Besar,
         </span>
 
         <br />
