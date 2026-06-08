@@ -362,7 +362,7 @@ async function handleLogout() {
                 />
 
                 <h3 className="font-semibold text-slate-900">
-                Template Prompt Cover
+                Template Prompt Cover Image
                 </h3>
 
                 <p className="text-sm text-slate-500 mt-2">
