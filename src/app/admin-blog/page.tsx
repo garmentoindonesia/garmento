@@ -162,7 +162,7 @@ export default function AdminBlogPage() {
         </section>
 
         {/* Actions */}
-        <div className="flex flex-col sm:flex-row gap-3 justify-end mt-8">
+        <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row gap-3 justify-center">
         <button
             className="
             px-5
@@ -181,8 +181,8 @@ export default function AdminBlogPage() {
         </button>
 
         <button
-            className="
-            px-5
+        className="
+            px-8
             py-3
             rounded-xl
             bg-slate-900
@@ -191,9 +191,9 @@ export default function AdminBlogPage() {
             cursor-pointer
             hover:bg-slate-800
             transition
-            "
+        "
         >
-            Publish
+        Publish
         </button>
         </div>
 
