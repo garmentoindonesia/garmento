@@ -36,9 +36,15 @@ export default function PetunjukPenggunaanPage() {
               <li>Paste slug ke kolom Slug Artikel.</li>
               <li>Klik tombol Generate Artikel.</li>
               <li>Tunggu artikel selesai dibuat.</li>
-              <li>Review isi artikel.</li>
+              <li>Review isi artikel di MDX Editor:
+                <ul>jangan ubah format mdx seperti tanda ##, ---, **, []</ul>
+                <ul>pastikan nama file jpg sesuai dengan format topik.mmddyy.hh.mm</ul>
+                <ul>contoh: hargakaos.080626.16.58.jpg</ul>
+              </li>
               <li>Buat cover image.</li>
               <li>Upload cover image.</li>
+                <ul>pastikan nama file jpg sesuai dengan format di MDX Editor</ul>
+                <ul>contoh: hargakaos.080626.16.58.jpg</ul>
               <li>Klik Publish.</li>
             </ol>
 
@@ -111,6 +117,9 @@ export default function PetunjukPenggunaanPage() {
               <li>Tidak ada tulisan aneh atau error AI.</li>
               <li>Bahasa Indonesia mudah dipahami.</li>
               <li>Artikel terlihat lengkap.</li>
+              <li>jangan ubah format mdx seperti tanda ##, ---, **, []</li>
+              <li>pastikan nama file jpg sesuai dengan format topik.mmddyy.hh.mm</li>
+              <li>contoh: hargakaos.080626.16.58.jpg</li>
             </ul>
 
             <p>
@@ -162,7 +171,7 @@ export default function PetunjukPenggunaanPage() {
 
             <hr />
 
-            <h2>Langkah 5 — Upload Cover</h2>
+            <h2>Langkah 5 — Upload Cover Image</h2>
 
             <p>
               Upload cover yang sudah dibuat ke bagian:
@@ -184,6 +193,13 @@ export default function PetunjukPenggunaanPage() {
               <li>Sesuai dengan isi artikel.</li>
             </ul>
 
+            <p>
+              Pastikan format nama file JPG:
+            </p>
+            <ul>
+                <li>pastikan nama file jpg sesuai dengan format di MDX Editor</li>
+                <li>contoh: hargakaos.080626.16.58.jpg</li>
+            </ul>
             <hr />
 
             <h2>Langkah 6 — Publish</h2>
