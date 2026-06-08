@@ -3,24 +3,50 @@ import Link from "next/link";
 
 function InfoButton({ title }: { title: string }) {
   return (
-    <span
-      title={title}
-      className="
-        inline-flex
-        items-center
-        justify-center
-        w-5
-        h-5
-        rounded-full
-        text-slate-400
-        text-xs
-        cursor-help
-        hover:text-slate-700
-        transition
-      "
-    >
-      ⓘ
-    </span>
+    <div className="relative group">
+      <span
+        className="
+          inline-flex
+          items-center
+          justify-center
+          w-5
+          h-5
+          text-slate-400
+          text-xs
+          cursor-help
+          hover:text-slate-700
+          transition
+        "
+      >
+        ⓘ
+      </span>
+
+      <div
+        className="
+          absolute
+          left-1/2
+          top-full
+          z-50
+          mt-2
+          -translate-x-1/2
+          whitespace-nowrap
+          rounded-lg
+          bg-slate-900
+          px-3
+          py-2
+          text-xs
+          text-white
+          shadow-lg
+          opacity-0
+          pointer-events-none
+          transition-all
+          duration-150
+          group-hover:opacity-100
+        "
+      >
+        {title}
+      </div>
+    </div>
   );
 }
 
