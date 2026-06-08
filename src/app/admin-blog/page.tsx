@@ -331,7 +331,21 @@ async function handlePublish() {
             />
 
           </div>
-placeholder="contoh: harga-kaos-custom-100-pcs-080626-1658"
+          
+          <p
+            className="
+              mt-4
+              rounded-lg
+              bg-slate-50
+              px-3
+              py-2
+              text-sm
+              text-slate-500
+            "
+          >
+            Contoh: hargakaos.080626.16.58.jpg
+          </p>
+          
         </section>
 
         {/* MDX Editor */}
