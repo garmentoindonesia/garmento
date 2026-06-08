@@ -4,22 +4,18 @@ import Link from "next/link";
 function InfoButton({ title }: { title: string }) {
   return (
     <div className="relative group">
-      <span
+      <Image
+        src="/tooltip.svg"
+        alt="Info"
+        width={16}
+        height={16}
         className="
-          inline-flex
-          items-center
-          justify-center
-          w-5
-          h-5
-          text-slate-400
-          text-xs
           cursor-help
-          hover:text-slate-700
+          opacity-70
+          hover:opacity-100
           transition
         "
-      >
-        ⓘ
-      </span>
+      />
 
       <div
         className="
@@ -30,13 +26,13 @@ function InfoButton({ title }: { title: string }) {
           mt-2
           -translate-x-1/2
           whitespace-nowrap
-          rounded-lg
+          rounded-xl
           bg-slate-900
           px-3
           py-2
           text-xs
           text-white
-          shadow-lg
+          shadow-xl
           opacity-0
           pointer-events-none
           transition-all
