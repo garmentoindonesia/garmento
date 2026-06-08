@@ -269,87 +269,99 @@ export default function AdminBlogPage() {
                 href="/admin-blog/docs/petunjuk-penggunaan"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="
-                bg-gradient-to-br
-                from-blue-50
-                to-white
-                border
-                border-blue-200
-                rounded-2xl
-                p-5
-                cursor-pointer
-                hover:-translate-y-1
-                hover:shadow-md
-                transition
-                "
+                    className="
+                        bg-white
+                        border
+                        border-slate-200
+                        rounded-2xl
+                        p-5
+                        hover:border-slate-400
+                        hover:shadow-lg
+                        hover:-translate-y-1
+                        transition
+                    "
             >
-                <div className="text-2xl mb-3">📄</div>
+                <Image
+                src="/docs.svg"
+                alt=""
+                width={42}
+                height={42}
+                className="mb-4"
+                />
 
-                <div className="font-semibold text-slate-900">
+                <h3 className="font-semibold text-slate-900">
                 Petunjuk Penggunaan
-                </div>
+                </h3>
 
-                <div className="text-sm text-slate-500 mt-2">
+                <p className="text-sm text-slate-500 mt-2">
                 SOP operasional pembuatan artikel blog GARMENTO.
-                </div>
+                </p>
             </Link>
 
             <Link
                 href="/admin-blog/docs/template-prompt-cover"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="
-                bg-gradient-to-br
-                from-emerald-50
-                to-white
-                border
-                border-emerald-200
-                rounded-2xl
-                p-5
-                cursor-pointer
-                hover:-translate-y-1
-                hover:shadow-md
-                transition
-                "
+                    className="
+                        bg-white
+                        border
+                        border-slate-200
+                        rounded-2xl
+                        p-5
+                        hover:border-slate-400
+                        hover:shadow-lg
+                        hover:-translate-y-1
+                        transition
+                    "
             >
-                <div className="text-2xl mb-3">🖼️</div>
+                <Image
+                src="/photos.svg"
+                alt=""
+                width={42}
+                height={42}
+                className="mb-4"
+                />
 
-                <div className="font-semibold text-slate-900">
+                <h3 className="font-semibold text-slate-900">
                 Template Prompt Cover
-                </div>
+                </h3>
 
-                <div className="text-sm text-slate-500 mt-2">
+                <p className="text-sm text-slate-500 mt-2">
                 Prompt siap copy ke GPT, Gemini, dan AI image generator.
-                </div>
+                </p>
             </Link>
 
             <Link
                 href="/admin-blog/docs/master-list-slug"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="
-                bg-gradient-to-br
-                from-amber-50
-                to-white
-                border
-                border-amber-200
-                rounded-2xl
-                p-5
-                cursor-pointer
-                hover:-translate-y-1
-                hover:shadow-md
-                transition
-                "
+                    className="
+                        bg-white
+                        border
+                        border-slate-200
+                        rounded-2xl
+                        p-5
+                        hover:border-slate-400
+                        hover:shadow-lg
+                        hover:-translate-y-1
+                        transition
+                    "
             >
-                <div className="text-2xl mb-3">📚</div>
+                <Image
+                src="/repo.svg"
+                alt=""
+                width={42}
+                height={42}
+                className="mb-4"
+                />
 
-                <div className="font-semibold text-slate-900">
+                <h3 className="font-semibold text-slate-900">
                 99 Master List Slug
-                </div>
+                </h3>
 
-                <div className="text-sm text-slate-500 mt-2">
+                <p className="text-sm text-slate-500 mt-2">
                 Daftar 99 slug artikel siap produksi dan generate.
-                </div>
+                </p>
             </Link>
 
           </div>
