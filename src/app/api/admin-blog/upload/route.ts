@@ -1,17 +1,11 @@
 import { NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
-
-const BLOG_IMAGE_PATH = path.join(
-  process.cwd(),
-  "public",
-  "blog"
-);
+import { uploadToGithub } from "@/lib/github";
 
 export async function POST(
   request: Request
 ) {
   try {
+
     const formData =
       await request.formData();
 
@@ -27,7 +21,9 @@ export async function POST(
           success: false,
           message: "Slug wajib diisi",
         },
-        { status: 400 }
+        {
+          status: 400,
+        }
       );
     }
 
@@ -37,24 +33,24 @@ export async function POST(
           success: false,
           message: "File tidak ditemukan",
         },
-        { status: 400 }
+        {
+          status: 400,
+        }
       );
     }
 
     const bytes =
       await file.arrayBuffer();
 
-    const buffer =
-      Buffer.from(bytes);
+    const base64 =
+      Buffer
+        .from(bytes)
+        .toString("base64");
 
-    const filePath = path.join(
-      BLOG_IMAGE_PATH,
-      `${slug}.jpg`
-    );
-
-    fs.writeFileSync(
-      filePath,
-      buffer
+    await uploadToGithub(
+      `public/blog/${slug}.jpg`,
+      base64,
+      `Add cover ${slug}`
     );
 
     return NextResponse.json({

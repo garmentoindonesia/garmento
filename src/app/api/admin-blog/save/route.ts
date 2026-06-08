@@ -1,18 +1,11 @@
 import { NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
-
-const BLOG_PATH = path.join(
-  process.cwd(),
-  "src",
-  "content",
-  "blog"
-);
+import { uploadToGithub } from "@/lib/github";
 
 export async function POST(
   request: Request
 ) {
   try {
+
     const {
       slug,
       content,
@@ -24,9 +17,7 @@ export async function POST(
           success: false,
           message: "Slug wajib diisi",
         },
-        {
-          status: 400,
-        }
+        { status: 400 }
       );
     }
 
@@ -34,35 +25,18 @@ export async function POST(
       return NextResponse.json(
         {
           success: false,
-          message: "Konten MDX kosong",
+          message: "Konten kosong",
         },
-        {
-          status: 400,
-        }
+        { status: 400 }
       );
     }
 
-    const filePath = path.join(
-      BLOG_PATH,
-      `${slug}.mdx`
-    );
-
-    if (fs.existsSync(filePath)) {
-    return NextResponse.json(
-        {
-        success: false,
-        message: "Slug sudah digunakan",
-        },
-        {
-        status: 409,
-        }
-    );
-    }
-
-    fs.writeFileSync(
-      filePath,
-      content,
-      "utf8"
+    await uploadToGithub(
+      `src/content/blog/${slug}.mdx`,
+      Buffer
+        .from(content)
+        .toString("base64"),
+      `Add blog ${slug}`
     );
 
     return NextResponse.json({

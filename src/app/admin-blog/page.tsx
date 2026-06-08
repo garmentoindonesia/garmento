@@ -479,6 +479,7 @@ async function handlePublish() {
                   onClick={handlePublish}
                   disabled={publishing}
                   className="
+                    cursor-pointer
                     px-8
                     py-3
                     rounded-xl
