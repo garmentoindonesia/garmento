@@ -110,6 +110,20 @@ export default function Solution() {
 
             </h2>
 
+            <h3
+              className="
+                text-m md:text-xl
+                font-bold text-[#1E4ED8]
+                leading-[1.15]
+                tracking-[-0.4px]
+
+                text-center md:text-left
+              "
+            >
+              Bagian dari PT Nusa Garment Indonesia
+
+            </h3>
+
             <p
               className="
                 mt-4
