@@ -3,27 +3,24 @@ import Link from "next/link";
 
 function InfoButton({ title }: { title: string }) {
   return (
-    <button
-      type="button"
+    <span
       title={title}
       className="
-        flex
+        inline-flex
         items-center
         justify-center
-        w-7
-        h-7
+        w-5
+        h-5
         rounded-full
-        border
-        border-slate-300
-        text-slate-500
+        text-slate-400
         text-xs
-        cursor-pointer
-        hover:bg-slate-100
+        cursor-help
+        hover:text-slate-700
         transition
       "
     >
       ⓘ
-    </button>
+    </span>
   );
 }
 
@@ -56,9 +53,9 @@ export default function AdminBlogPage() {
 
         {/* Slug */}
         <section className="bg-white rounded-3xl border border-slate-200 p-6 md:p-7 shadow-sm mb-6">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-2 mb-4">
             <h2 className="text-lg font-semibold text-slate-900">
-              Slug Artikel
+                Slug Artikel
             </h2>
 
             <InfoButton title="Masukkan slug artikel yang akan digunakan sebagai URL." />
@@ -87,9 +84,9 @@ export default function AdminBlogPage() {
 
         {/* AI Generator */}
         <section className="bg-white rounded-3xl border border-slate-200 p-6 md:p-7 shadow-sm mb-6">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-2 mb-4">
             <h2 className="text-lg font-semibold text-slate-900">
-              AI Generator
+                AI Generator
             </h2>
 
             <InfoButton title="Generate artikel otomatis berdasarkan slug yang dimasukkan." />
@@ -118,9 +115,9 @@ export default function AdminBlogPage() {
 
         {/* Cover */}
         <section className="bg-white rounded-3xl border border-slate-200 p-6 md:p-7 shadow-sm mb-6">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-2 mb-4">
             <h2 className="text-lg font-semibold text-slate-900">
-              Cover Image
+                Cover Image
             </h2>
 
             <InfoButton title="Upload cover JPG dengan ukuran rekomendasi 1600 × 900 px." />
@@ -152,9 +149,9 @@ export default function AdminBlogPage() {
 
         {/* MDX Editor */}
         <section className="bg-white rounded-3xl border border-slate-200 p-6 md:p-7 shadow-sm mb-6">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-2 mb-4">
             <h2 className="text-lg font-semibold text-slate-900">
-              MDX Editor
+                MDX Editor
             </h2>
 
             <InfoButton title="Edit dan review artikel sebelum disimpan atau dipublish." />
@@ -180,59 +177,61 @@ export default function AdminBlogPage() {
               focus:ring-slate-200
             "
           />
-        </section>
 
-        {/* Actions */}
-        <section className="bg-white rounded-3xl border border-slate-200 p-6 md:p-7 shadow-sm mb-6">
-          <div className="flex items-center justify-between mb-5">
-            <h2 className="text-lg font-semibold text-slate-900">
-              Actions
-            </h2>
+          <div className="mt-6 pt-6 border-t border-slate-200">
+            <div className="flex items-center gap-2 justify-center mb-5">
+                <h2 className="text-lg font-semibold text-slate-900">
+                Actions
+                </h2>
 
-            <InfoButton title="Simpan sebagai draft atau langsung publish ke blog." />
+                <InfoButton title="Simpan sebagai draft atau langsung publish ke blog." />
+            </div>
+
+            <div className="flex flex-col sm:flex-row justify-center gap-3">
+                <button
+                    className="
+                        px-5
+                        py-3
+                        rounded-xl
+                        border
+                        border-slate-300
+                        bg-white
+                        font-medium
+                        cursor-pointer
+                        hover:bg-slate-50
+                        transition
+                    "
+                >
+                    Save Draft
+                </button>
+
+                <button
+                    className="
+                        px-6
+                        py-3
+                        rounded-xl
+                        bg-slate-900
+                        text-white
+                        font-medium
+                        cursor-pointer
+                        hover:bg-slate-800
+                        transition
+                    "
+                >
+                    Publish
+                </button>
+            </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <button
-              className="
-                px-5
-                py-3
-                rounded-xl
-                border
-                border-slate-300
-                bg-white
-                font-medium
-                cursor-pointer
-                hover:bg-slate-50
-                transition
-              "
-            >
-              Save Draft
-            </button>
-
-            <button
-              className="
-                px-6
-                py-3
-                rounded-xl
-                bg-slate-900
-                text-white
-                font-medium
-                cursor-pointer
-                hover:bg-slate-800
-                transition
-              "
-            >
-              Publish
-            </button>
-          </div>
         </section>
+
+        
 
         {/* Docs */}
         <section className="bg-white rounded-3xl border border-slate-200 p-6 md:p-7 shadow-sm">
-          <div className="flex items-center justify-between mb-5">
+          <div className="flex items-center gap-2 mb-4">
             <h2 className="text-lg font-semibold text-slate-900">
-              Docs
+                Docs
             </h2>
 
             <InfoButton title="Dokumentasi dashboard dan referensi internal." />
@@ -241,57 +240,90 @@ export default function AdminBlogPage() {
           <div className="grid gap-4 md:grid-cols-3">
 
             <Link
-              href="/admin-blog/docs/petunjuk-penggunaan"
-              className="
-                rounded-2xl
+                href="/admin-blog/docs/petunjuk-penggunaan"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                bg-gradient-to-br
+                from-blue-50
+                to-white
                 border
-                border-slate-200
+                border-blue-200
+                rounded-2xl
                 p-5
                 cursor-pointer
-                hover:border-slate-400
-                hover:bg-slate-50
+                hover:-translate-y-1
+                hover:shadow-md
                 transition
-              "
+                "
             >
-              <div className="font-semibold text-slate-900">
+                <div className="text-2xl mb-3">📄</div>
+
+                <div className="font-semibold text-slate-900">
                 Petunjuk Penggunaan
-              </div>
+                </div>
+
+                <div className="text-sm text-slate-500 mt-2">
+                SOP operasional pembuatan artikel blog GARMENTO.
+                </div>
             </Link>
 
             <Link
-              href="/admin-blog/docs/template-prompt-cover"
-              className="
-                rounded-2xl
+                href="/admin-blog/docs/template-prompt-cover"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                bg-gradient-to-br
+                from-emerald-50
+                to-white
                 border
-                border-slate-200
+                border-emerald-200
+                rounded-2xl
                 p-5
                 cursor-pointer
-                hover:border-slate-400
-                hover:bg-slate-50
+                hover:-translate-y-1
+                hover:shadow-md
                 transition
-              "
+                "
             >
-              <div className="font-semibold text-slate-900">
+                <div className="text-2xl mb-3">🖼️</div>
+
+                <div className="font-semibold text-slate-900">
                 Template Prompt Cover
-              </div>
+                </div>
+
+                <div className="text-sm text-slate-500 mt-2">
+                Prompt siap copy ke GPT, Gemini, dan AI image generator.
+                </div>
             </Link>
 
             <Link
-              href="/admin-blog/docs/master-list-slug"
-              className="
-                rounded-2xl
+                href="/admin-blog/docs/master-list-slug"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                bg-gradient-to-br
+                from-amber-50
+                to-white
                 border
-                border-slate-200
+                border-amber-200
+                rounded-2xl
                 p-5
                 cursor-pointer
-                hover:border-slate-400
-                hover:bg-slate-50
+                hover:-translate-y-1
+                hover:shadow-md
                 transition
-              "
+                "
             >
-              <div className="font-semibold text-slate-900">
+                <div className="text-2xl mb-3">📚</div>
+
+                <div className="font-semibold text-slate-900">
                 99 Master List Slug
-              </div>
+                </div>
+
+                <div className="text-sm text-slate-500 mt-2">
+                Daftar 99 slug artikel siap produksi dan generate.
+                </div>
             </Link>
 
           </div>
