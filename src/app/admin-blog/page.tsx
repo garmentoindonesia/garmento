@@ -149,6 +149,37 @@ async function handleUploadCover() {
   }
 }
 
+async function handlePublish() {
+  try {
+
+    if (!slug) {
+      alert("Isi slug terlebih dahulu");
+      return;
+    }
+
+    if (!content.trim()) {
+      alert("Konten artikel masih kosong");
+      return;
+    }
+
+    if (!coverFile) {
+      alert("Pilih cover image");
+      return;
+    }
+
+    await handleUploadCover();
+
+    await handleSaveDraft();
+
+    alert("Artikel berhasil dipublish");
+
+  } catch {
+
+    alert("Publish gagal");
+
+  }
+}
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <div className="max-w-5xl mx-auto px-5 py-10 md:py-14">
@@ -374,19 +405,20 @@ async function handleUploadCover() {
                 </button>
 
                 <button
-                    className="
-                        px-6
-                        py-3
-                        rounded-xl
-                        bg-slate-900
-                        text-white
-                        font-medium
-                        cursor-pointer
-                        hover:bg-slate-800
-                        transition
-                    "
+                  onClick={handlePublish}
+                  className="
+                    px-6
+                    py-3
+                    rounded-xl
+                    bg-slate-900
+                    text-white
+                    font-medium
+                    cursor-pointer
+                    hover:bg-slate-800
+                    transition
+                  "
                 >
-                    Publish
+                  Publish
                 </button>
             </div>
           </div>
