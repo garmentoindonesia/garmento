@@ -66,19 +66,16 @@ async function handleLogout() {
   router.refresh();
 }
 
-async function handleSaveDraft() {
+async function handleSaveMDX() {
   try {
 
     const response = await fetch(
       "/api/admin-blog/save",
       {
         method: "POST",
-
         headers: {
-          "Content-Type":
-            "application/json",
+          "Content-Type": "application/json",
         },
-
         body: JSON.stringify({
           slug,
           content,
@@ -86,16 +83,18 @@ async function handleSaveDraft() {
       }
     );
 
-    const data =
-      await response.json();
+    const data = await response.json();
 
-    alert(data.message);
+    if (!response.ok) {
+      alert(data.message);
+      throw new Error(data.message);
+    }
 
-  } catch {
+    return data;
 
-    alert(
-      "Terjadi kesalahan saat menyimpan."
-    );
+  } catch (error) {
+
+    throw error;
 
   }
 }
@@ -113,38 +112,30 @@ async function handleUploadCover() {
       return;
     }
 
-    const formData =
-      new FormData();
+    const formData = new FormData();
 
-    formData.append(
-      "slug",
-      slug
+    formData.append("slug", slug);
+    formData.append("file", coverFile);
+
+    const response = await fetch(
+      "/api/admin-blog/upload",
+      {
+        method: "POST",
+        body: formData,
+      }
     );
 
-    formData.append(
-      "file",
-      coverFile
-    );
+    const data = await response.json();
 
-    const response =
-      await fetch(
-        "/api/admin-blog/upload",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
+    if (!response.ok) {
+      throw new Error(data.message);
+    }
 
-    const data =
-      await response.json();
+    return data;
 
-    alert(data.message);
+  } catch (error) {
 
-  } catch {
-
-    alert(
-      "Gagal upload cover"
-    );
+    throw error;
 
   }
 }
@@ -169,7 +160,7 @@ async function handlePublish() {
 
     await handleUploadCover();
 
-    await handleSaveDraft();
+    await handleSaveMDX();
 
     alert("Artikel berhasil dipublish");
 
@@ -385,29 +376,12 @@ async function handlePublish() {
                 <InfoButton title="Klik langsung publish ke blog." />
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-center gap-3">
-                <button
-                  onClick={handleSaveDraft}
-                  className="
-                    px-5
-                    py-3
-                    rounded-xl
-                    border
-                    border-slate-300
-                    bg-white
-                    font-medium
-                    cursor-pointer
-                    hover:bg-slate-50
-                    transition
-                  "
-                >
-                  Save Draft
-                </button>
+            <div className="flex justify-center">
 
                 <button
                   onClick={handlePublish}
                   className="
-                    px-6
+                    px-8
                     py-3
                     rounded-xl
                     bg-slate-900

@@ -47,6 +47,18 @@ export async function POST(
       `${slug}.mdx`
     );
 
+    if (fs.existsSync(filePath)) {
+    return NextResponse.json(
+        {
+        success: false,
+        message: "Slug sudah digunakan",
+        },
+        {
+        status: 409,
+        }
+    );
+    }
+
     fs.writeFileSync(
       filePath,
       content,
