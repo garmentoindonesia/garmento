@@ -1,10 +1,14 @@
 import { NextResponse } from "next/server";
+import { GoogleGenAI } from "@google/genai";
+
+const ai = new GoogleGenAI({
+  apiKey: process.env.GOOGLE_API_KEY!,
+});
 
 export async function POST(
   request: Request
 ) {
   try {
-
     const { slug } =
       await request.json();
 
@@ -22,7 +26,7 @@ title: "{judul SEO natural, tidak clickbait berlebihan}"
 excerpt: "{ringkasan 1–2 kalimat SEO friendly}"
 cover: "/blog/${slug}.jpg"
 date: "2026-06-06"
-category: "{Produksi Kaos Custom | Polo Shirt Corporate | Bahan & Edukasi (pilih yang paling sesuai topik dan cluster thinking di nomor 6 bawah)}"
+category: "{Produksi Kaos Custom | Polo Shirt Corporate | Bahan & Edukasi}"
 author: "GARMENTO"
 keywords:
   - {keyword utama}
@@ -32,83 +36,65 @@ keywords:
 featured: true
 ---
 
-2. STRUKTUR ARTIKEL:
+2. STRUKTUR ARTIKEL
 
 - H1 sesuai topik
-- Intro 1–2 paragraf
-- H2 penjelasan utama
-- H2 breakdown / faktor / detail penting
-- H2 simulasi (jika relevan)
+- Intro
+- H2 utama
+- H2 detail
+- H2 simulasi
 - H2 tips
 - H2 kesimpulan
-- H2 CTA penutup
+- H2 CTA
 
-3. GAYA PENULISAN:
+3. GAYA
 
 - natural
 - SEO friendly
 - tidak kaku
-- cocok blog perusahaan garment
-- kalimat tidak terlalu panjang
-- hindari repetisi berlebihan
+- blog perusahaan garment
 
-4. WAJIB ADA:
+4. WAJIB ADA
 
 - bullet list
-- penjelasan harga (jika relevan)
-- contoh simulasi (jika cocok)
-- CTA di bagian akhir
+- simulasi jika relevan
+- CTA
 
-5. INTERNAL LINKING (WAJIB)
+5. INTERNAL LINK
 
-Maksimal 2 internal link per artikel.
+Maksimal 2 internal link.
 
-RULE CLUSTER:
-
-A.
-Topik kaos custom, harga kaos,
-sablon kaos, produksi kaos
-
-→ wajib link:
+Topik Kaos:
  /layanan/produksi-kaos-custom
 
-B.
-Topik polo shirt,
-seragam polo
-
-→ wajib link:
+Topik Polo:
  /layanan/produksi-polo-shirt
 
-C.
-Topik bahan kaos,
-rubber, plastisol,
-edukasi sablon
+6. OUTPUT
 
-→ pilih sesuai konteks:
- /layanan/produksi-kaos-custom
- atau
- /layanan/produksi-polo-shirt
+FULL MDX SIAP COPAS
 
-6. CLUSTER THINKING
-
-Artikel harus masuk salah satu:
-
-- Produksi Kaos Custom
-- Polo Shirt Corporate
-- Bahan & Edukasi
-
-7. OUTPUT
-
-- FULL MDX SIAP COPAS
-- tanpa penjelasan tambahan
+JANGAN beri penjelasan.
+JANGAN gunakan markdown code block.
+Keluarkan MDX final saja.
 `;
+
+    const result =
+      await ai.models.generateContent({
+        model: "gemini-2.5-flash",
+        contents: prompt,
+      });
+
+    const content =
+      result.text ?? "";
 
     return NextResponse.json({
       success: true,
-      content: prompt,
+      content,
     });
 
-  } catch {
+  } catch (error) {
+    console.error(error);
 
     return NextResponse.json(
       {
