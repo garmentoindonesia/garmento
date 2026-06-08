@@ -19,7 +19,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Produksi Polo Shirt | GARMENTO",
   description:
-    "Produksi polo shirt custom premium untuk perusahaan, event, komunitas, dan instansi dengan kualitas terjamin dan pengerjaan tepat waktu.",
+    "Produksi polo shirt custom skala besar untuk perusahaan, event, komunitas, dan instansi dengan kualitas terjamin dan pengerjaan tepat waktu.",
 
   robots: {
     index: false,
