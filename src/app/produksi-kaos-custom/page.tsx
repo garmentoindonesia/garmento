@@ -17,7 +17,11 @@ import { FAQ_PKC } from "@/data/faq/pkc";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Produksi Kaos Custom Skala Besar | GARMENTO",
+  title: {
+    default:
+      "Produksi Kaos Custom Skala Besar untuk Perusahaan & Event | GARMENTO",
+    template: "%s | GARMENTO",
+  },
   description:
     "Produksi kaos custom skala besar untuk perusahaan, event, komunitas, dan instansi dengan kualitas terjamin dan pengerjaan tepat waktu.",
 

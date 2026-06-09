@@ -17,7 +17,11 @@ import { FAQ_PKC } from "@/data/faq/pkc";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Produksi Polo Shirt Skala Besar | GARMENTO",
+  title: {
+    default:
+      "Produksi Polo Shirt Skala Besar untuk Seragam & Brand Berkualitas | GARMENTO",
+    template: "%s | GARMENTO",
+  },
   description:
     "Produksi polo shirt custom skala besar untuk perusahaan, event, komunitas, dan instansi dengan kualitas terjamin dan pengerjaan tepat waktu.",
 
