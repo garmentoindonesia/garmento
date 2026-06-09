@@ -8,7 +8,7 @@ export default function HargaPPS() {
       whatsapp:
         "Halo GARMENTO, saya ingin konsultasi produksi Polo Lacoste Pique Diamond.",
       features: [
-        "Minimal Order 36 Pcs",
+        "Minimal Order 150 Pcs",
         "Bahan 100% katun",
         "Ukuran XS–XL",
       ],
@@ -21,7 +21,7 @@ export default function HargaPPS() {
       whatsapp:
         "Halo GARMENTO, saya ingin konsultasi produksi Polo Lacoste Pique Hexagon.",
       features: [
-        "Minimal Order 36 Pcs",
+        "Minimal Order 150 Pcs",
         "Bahan Premium",
         "Ukuran XS–XL",
       ],
@@ -34,7 +34,7 @@ export default function HargaPPS() {
       whatsapp:
         "Halo GARMENTO, saya ingin konsultasi produksi Polo Custom.",
       features: [
-        "Minimal Order 100 Pcs",
+        "Minimal Order 150 Pcs",
         "Custom Pecah Pola",
         "Kombinasi Warna",
         "Ukuran XS–XL",

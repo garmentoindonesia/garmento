@@ -8,7 +8,7 @@ export default function HargaPKC() {
       whatsapp:
         "Halo GARMENTO, saya ingin konsultasi produksi Kaos Polyester.",
       features: [
-        "Minimal Order 36 Pcs",
+        "Minimal Order 150 Pcs",
         "Bahan Polyester",
         "Sablon Standard",
         "Ukuran XS–XL",
@@ -22,7 +22,7 @@ export default function HargaPKC() {
       whatsapp:
         "Halo GARMENTO, saya ingin konsultasi produksi Kaos Cotton Combed.",
       features: [
-        "Minimal Order 36 Pcs",
+        "Minimal Order 150 Pcs",
         "Bahan Cotton Combed",
         "Sablon High Quality",
         "Ukuran XS–XL",
@@ -36,7 +36,7 @@ export default function HargaPKC() {
       whatsapp:
         "Halo GARMENTO, saya ingin konsultasi produksi Kaos Cotton Bamboo.",
       features: [
-        "Minimal Order 36 Pcs",
+        "Minimal Order 150 Pcs",
         "Bahan Cotton Bamboo",
         "Finishing Premium",
         "Ukuran XS–XL",
