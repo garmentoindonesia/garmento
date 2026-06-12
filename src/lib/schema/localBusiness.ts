@@ -120,9 +120,9 @@ export const localBusinessSchema = {
     "https://maps.app.goo.gl/TCbUWmqaG9rHAdoL7",
 
   sameAs: [
-    "https://www.instagram.com/garmento",
-    "https://www.tiktok.com/@garmento",
-    "https://www.facebook.com/garmento", // cek URL final
+    "https://www.instagram.com/garmento.id_",
+    "https://www.tiktok.com/@garmento.id_",
+    "https://web.facebook.com/profile.php?id=61590578078198", // cek URL final
   ],
 
   areaServed: [

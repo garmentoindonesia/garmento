@@ -43,7 +43,7 @@ export default function Footer() {
             <div className="flex items-center gap-4 pt-5">
 
               <a
-                href="https://instagram.com/garmento"
+                href="https://www.instagram.com/garmento.id_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
@@ -68,7 +68,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://tiktok.com/@garmento"
+                href="https://www.tiktok.com/@garmento.id_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
@@ -93,7 +93,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://facebook.com/@garmento"
+                href="https://web.facebook.com/profile.php?id=61590578078198"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
