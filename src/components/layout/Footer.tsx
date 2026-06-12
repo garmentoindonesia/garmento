@@ -93,7 +93,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://web.facebook.com/profile.php?id=61590578078198"
+                href="https://www.facebook.com/garmento.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="

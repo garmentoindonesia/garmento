@@ -7,17 +7,19 @@ export const localBusinessSchema = {
 
   name: "GARMENTO",
 
-  slogan: "Vendor Kaos Custom dan Polo Shirt Skala Besar",
-
   legalName: "PT Nusa Garment Indonesia",
 
   url: "https://www.garmento.id",
 
-  image: "https://www.garmento.id/logogarmento.png",
+  image: "https://www.garmento.id/og-image.jpg",
 
   logo: "https://www.garmento.id/logogarmento.png",
 
-  foundingDate: "2026-06-06",
+  founder: {
+    "@type": "Person",
+
+    name: "Thofhan Zaka Anshori",
+  },
 
   description:
     "Vendor kaos custom dan polo shirt untuk perusahaan, event, komunitas, dan instansi dengan kapasitas produksi skala besar.",
@@ -86,18 +88,6 @@ export const localBusinessSchema = {
     },
   ],
 
-  founder: {
-    "@type": "Person",
-
-    name: "Thofhan Zaka Anshori",
-  },
-
-  parentOrganization: {
-    "@type": "Organization",
-
-    name: "PT Nusa Garment Indonesia",
-  },
-
   foundingLocation: {
     "@type": "Place",
 
@@ -105,15 +95,15 @@ export const localBusinessSchema = {
   },
 
   contactPoint: {
-    "@type": "ContactPoint",
+  "@type": "ContactPoint",
 
-    telephone: "+6281329269977",
+  telephone: "+6281329269977",
 
-    contactType: "customer service",
+  contactType: "customer service",
 
-    areaServed: "ID",
+  areaServed: "ID",
 
-    availableLanguage: "id",
+  availableLanguage: "id",
   },
 
   hasMap:
@@ -122,7 +112,7 @@ export const localBusinessSchema = {
   sameAs: [
     "https://www.instagram.com/garmento.id_",
     "https://www.tiktok.com/@garmento.id_",
-    "https://web.facebook.com/profile.php?id=61590578078198", // cek URL final
+    "https://www.facebook.com/garmento.id",
   ],
 
   areaServed: [
@@ -151,6 +141,12 @@ export const localBusinessSchema = {
     name: "Malang",
   },
   ],
+
+  serviceArea: {
+  "@type": "Country",
+
+  name: "Indonesia",
+  },
 
   knowsAbout: [
     "Produksi Kaos Custom",
