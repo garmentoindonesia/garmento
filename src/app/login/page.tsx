@@ -78,7 +78,7 @@ export default function LoginPage() {
           </h1>
 
           <p className="mt-2 text-sm text-slate-500">
-            Login untuk akses.
+            Selamat datang kembali. Silakan login untuk melanjutkan.
           </p>
         </div>
 
