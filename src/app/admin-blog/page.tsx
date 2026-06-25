@@ -380,7 +380,7 @@ async function handlePublish() {
                 Cover Image
             </h2>
 
-            <InfoButton title="Upload cover JPG dengan ukuran rekomendasi 1600 × 900 px dengan format nama file: slug.mmddyy.hh.mm." />
+            <InfoButton title="Upload cover JPG dengan ukuran rekomendasi 1600 × 900 px dengan format nama file: slug-ddmmyy-hhmm." />
           </div>
 
           <div className="rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 p-6">
