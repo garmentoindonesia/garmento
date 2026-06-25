@@ -103,7 +103,7 @@ JANGAN gunakan format selain MDX final.
       result.text?.trim() ?? "";
 
     const validDateRegex =
-      /date:\\s*["']\\d{4}-\\d{2}-\\d{2}["']/;
+      /date:\s*["']\d{4}-\d{2}-\d{2}["']/;
 
     if (!validDateRegex.test(content)) {
       return NextResponse.json(
