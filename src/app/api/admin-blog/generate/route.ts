@@ -64,9 +64,13 @@ featured: true
 - simulasi jika relevan
 - CTA
 
-5. INTERNAL LINK
+5. INTERNAL LINK (WAJIB)
+
+WAJIB menyisipkan minimal 1 internal link yang relevan di dalam isi artikel.
 
 Maksimal 2 internal link.
+
+Gunakan HANYA path relatif berikut:
 
 Topik Kaos:
 /layanan/produksi-kaos-custom
@@ -74,7 +78,21 @@ Topik Kaos:
 Topik Polo:
 /layanan/produksi-polo-shirt
 
-JANGAN tambahkan www, https:// maupun naked domain apapun.
+Format link HARUS markdown biasa:
+
+[teks anchor](/layanan/produksi-kaos-custom)
+
+atau
+
+[teks anchor](/layanan/produksi-polo-shirt)
+
+JANGAN gunakan:
+- https://
+- www
+- naked domain
+- URL eksternal
+
+Internal link HARUS natural dan menyatu dalam paragraf artikel.
 
 6. OUTPUT
 
