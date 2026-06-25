@@ -66,9 +66,9 @@ featured: true
 
 5. INTERNAL LINK (WAJIB)
 
-WAJIB menyisipkan minimal 1 internal link yang relevan di dalam isi artikel.
+WAJIB menyisipkan minimal 2 internal link yang relevan di dalam isi artikel.
 
-Maksimal 2 internal link.
+Maksimal 4 internal link.
 
 Gunakan HANYA path relatif berikut:
 
