@@ -74,11 +74,19 @@ JANGAN tambahkan www, https:// maupun naked domain apapun.
 
 6. OUTPUT
 
-FULL MDX SIAP COPAS
+Tulis artikel dalam format FULL MDX siap terbit.
+
+Artikel HARUS sepenuhnya netral dan TIDAK BOLEH menyebut, mengaitkan, membandingkan, atau mereferensikan GARMENTO dalam isi artikel, heading, CTA, meta description, FAQ, maupun narasi apa pun.
+
+Penyebutan GARMENTO HANYA diperbolehkan pada internal linking yang memang diperlukan.
+
+Keluarkan hasil final MDX saja.
 
 JANGAN beri penjelasan.
+JANGAN beri catatan tambahan.
 JANGAN gunakan markdown code block.
-Keluarkan MDX final saja.
+JANGAN gunakan pembuka atau penutup percakapan.
+JANGAN gunakan format selain MDX final.
 `;
 
     const result =
