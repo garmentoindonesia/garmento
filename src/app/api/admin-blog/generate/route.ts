@@ -70,6 +70,8 @@ Topik Kaos:
 Topik Polo:
  /layanan/produksi-polo-shirt
 
+JANGAN tambahkan www, https:// maupun naked domain apapun.
+
 6. OUTPUT
 
 FULL MDX SIAP COPAS
