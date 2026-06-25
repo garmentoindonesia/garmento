@@ -5,15 +5,17 @@ const ai = new GoogleGenAI({
   apiKey: process.env.GOOGLE_API_KEY!,
 });
 
-export async function POST(
-  request: Request
-) {
+export async function POST(request: Request) {
   try {
-    const { slug } =
-      await request.json();
+    const { slug } = await request.json();
+
+    const today =
+      new Date()
+        .toISOString()
+        .split("T")[0];
 
     const prompt = `
-Buatkan file MDX blog GARMENTO dengan format SEO siap publish.
+Buatkan file MDX blog dengan format SEO siap publish.
 
 SLUG: ${slug}
 
@@ -25,7 +27,7 @@ SLUG: ${slug}
 title: "{judul SEO natural, tidak clickbait berlebihan}"
 excerpt: "{ringkasan 1–2 kalimat SEO friendly}"
 cover: "/blog/${slug}.jpg"
-date: "2026-06-06"
+date: "${today}"
 category: "{Produksi Kaos Custom | Polo Shirt Corporate | Bahan & Edukasi}"
 author: "GARMENTO"
 keywords:
@@ -33,6 +35,7 @@ keywords:
   - {keyword turunan 1}
   - {keyword turunan 2}
   - {keyword turunan 3}
+
 featured: true
 ---
 
@@ -52,7 +55,8 @@ featured: true
 - natural
 - SEO friendly
 - tidak kaku
-- blog perusahaan garment
+- profesional
+- informatif
 
 4. WAJIB ADA
 
@@ -65,10 +69,10 @@ featured: true
 Maksimal 2 internal link.
 
 Topik Kaos:
- /layanan/produksi-kaos-custom
+/layanan/produksi-kaos-custom
 
 Topik Polo:
- /layanan/produksi-polo-shirt
+/layanan/produksi-polo-shirt
 
 JANGAN tambahkan www, https:// maupun naked domain apapun.
 
@@ -78,7 +82,7 @@ Tulis artikel dalam format FULL MDX siap terbit.
 
 Artikel HARUS sepenuhnya netral dan TIDAK BOLEH menyebut, mengaitkan, membandingkan, atau mereferensikan GARMENTO dalam isi artikel, heading, CTA, meta description, FAQ, maupun narasi apa pun.
 
-Penyebutan GARMENTO HANYA diperbolehkan pada internal linking yang memang diperlukan.
+Penyebutan GARMENTO HANYA diperbolehkan pada field author dan internal linking yang memang diperlukan.
 
 Keluarkan hasil final MDX saja.
 
@@ -96,7 +100,22 @@ JANGAN gunakan format selain MDX final.
       });
 
     const content =
-      result.text ?? "";
+      result.text?.trim() ?? "";
+
+    const validDateRegex =
+      /date:\\s*["']\\d{4}-\\d{2}-\\d{2}["']/;
+
+    if (!validDateRegex.test(content)) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Format tanggal invalid dari AI",
+        },
+        {
+          status: 500,
+        }
+      );
+    }
 
     return NextResponse.json({
       success: true,
