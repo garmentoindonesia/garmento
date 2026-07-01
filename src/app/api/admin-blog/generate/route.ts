@@ -106,6 +106,7 @@ Keluarkan hasil final MDX saja.
 
 JANGAN beri penjelasan.
 JANGAN beri catatan tambahan.
+JANGAN bikin tabel.
 JANGAN gunakan markdown code block.
 JANGAN gunakan pembuka atau penutup percakapan.
 JANGAN gunakan format selain MDX final.
