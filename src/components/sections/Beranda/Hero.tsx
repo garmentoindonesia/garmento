@@ -219,8 +219,14 @@ export default function Hero() {
             <div
               className="
                 hidden md:block
-                absolute top-1/2 right-2 md:right-6 z-20
-                -translate-y-1/2
+
+                absolute
+                top-0
+                left-0
+                -translate-x-1/4
+                -translate-y-1/4
+
+                z-20
 
                 bg-white/15
                 backdrop-blur-xl
@@ -274,7 +280,14 @@ export default function Hero() {
             <div
               className="
                 hidden md:block
-                absolute bottom-10 left-2 md:left-6 z-20
+
+                absolute
+                top-0
+                right-0
+                -translate-x-1/2
+                -translate-y-1/2
+
+                z-20
 
                 bg-white/15
                 backdrop-blur-xl
