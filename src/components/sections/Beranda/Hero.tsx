@@ -201,7 +201,7 @@ export default function Hero() {
 
             {/* IMAGE */}
             <Image
-              src="/heroberandaok.png"
+              src="/heroberandaNEW.png"
               alt="Produksi Kaos Garmento"
               width={700}
               height={700}
