@@ -25,7 +25,7 @@ const faqSchema = createFAQSchema(FAQ_PKC);
 const serviceSchema = createServiceSchema({
   name: "Produksi Kaos Custom",
   description:
-    "Jasa produksi kaos custom skala besar untuk perusahaan, event, komunitas, dan instansi.",
+    "Jasa produksi kaos custom skala besar untuk Event, Seragam & Merchandise.",
 
   url: "https://www.garmento.id/layanan/produksi-kaos-custom",
 });
@@ -48,12 +48,12 @@ const breadcrumbSchema = createBreadcrumbSchema([
 export const metadata: Metadata = {
   title: {
     default:
-      "Produksi Kaos Custom Skala Besar untuk Perusahaan & Event | GARMENTO",
+      "Produksi Kaos Custom Skala Besar untuk Event, Seragam & Merchandise | GARMENTO",
     template: "%s | GARMENTO",
   },
 
   description:
-    "Jasa produksi kaos custom skala besar untuk perusahaan, event, komunitas, dan instansi dengan kualitas premium, produksi terstruktur, dan tepat waktu.",
+    "Jasa produksi kaos custom skala besar untuk Event, Seragam & Merchandise dengan kualitas premium, produksi terstruktur, dan tepat waktu.",
 
   alternates: {
     canonical: "/layanan/produksi-kaos-custom",
@@ -63,9 +63,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "/layanan/produksi-kaos-custom",
     title:
-      "Produksi Kaos Custom Skala Besar untuk Perusahaan & Event | GARMENTO",
+      "Produksi Kaos Custom Skala Besar untuk Event, Seragam & Merchandise | GARMENTO",
     description:
-      "Jasa produksi kaos custom skala besar untuk perusahaan, event, komunitas, dan instansi dengan kualitas premium, produksi terstruktur, dan tepat waktu.",
+      "Jasa produksi kaos custom skala besar untuk Event, Seragam & Merchandise dengan kualitas premium, produksi terstruktur, dan tepat waktu.",
     siteName: "GARMENTO",
     images: [
       {
@@ -79,9 +79,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Produksi Kaos Custom Skala Besar untuk Perusahaan & Event | GARMENTO",
+      "Produksi Kaos Custom Skala Besar untuk Event, Seragam & Merchandise | GARMENTO",
     description:
-      "Jasa produksi kaos custom skala besar untuk perusahaan, event, komunitas, dan instansi dengan kualitas premium, produksi terstruktur, dan tepat waktu.",
+      "Jasa produksi kaos custom skala besar untuk Event, Seragam & Merchandise dengan kualitas premium, produksi terstruktur, dan tepat waktu.",
     images: ["/og-image-pkc.jpg"],
   },
 };

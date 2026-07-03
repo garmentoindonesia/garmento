@@ -19,11 +19,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     default:
-      "Produksi Kaos Custom Skala Besar untuk Perusahaan & Event | GARMENTO",
+      "Produksi Kaos Custom Skala Besar untuk Event, Seragam & Merchandise | GARMENTO",
     template: "%s | GARMENTO",
   },
   description:
-    "Jasa Produksi kaos custom skala besar untuk perusahaan, event, komunitas, dan instansi dengan kualitas terjamin dan pengerjaan tepat waktu.",
+    "Jasa Produksi kaos custom skala besar untuk Event, Seragam & Merchandise dengan kualitas terjamin dan pengerjaan tepat waktu.",
 
   robots: {
     index: false,

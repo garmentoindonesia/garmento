@@ -52,7 +52,7 @@ export default function Hero() {
               Skala Besar
             </span>{" "}
 
-            untuk Perusahaan, Event & Instansi
+            untuk Event, Seragam & Merchandise
 
           </h1>
 

@@ -74,7 +74,7 @@ return (
             text-left
         "
       >
-        Produksi Kaos Custom
+        Bikin Kaos Custom
 
         <span 
           className="
@@ -89,7 +89,7 @@ return (
           {" "}Skala Besar{" "}
         </span>
 
-        untuk Event & Seragam
+        untuk Event & Merchandise
       </h1>
 
       <p
@@ -101,8 +101,8 @@ return (
           mx-0
         "
       >
-        Bikin kaos custom untuk perusahaan,
-        event, komunitas, hingga brand
+        Bikin kaos custom untuk
+        event, komunitas, perusahaan hingga brand
         dengan kualitas jahitan rapi,
         sablon awet, dan proses produksi
         terstruktur.
@@ -267,7 +267,7 @@ return (
 
         {/* IMAGE */}
         <Image
-          src="/heroPKC.png"
+          src="/heroPKCnew.png"
           alt="Produksi Kaos Custom Garmento"
           width={700}
           height={700}
@@ -290,8 +290,10 @@ return (
             hidden md:block
 
             absolute
-            top-6
-            right-0
+            top-0
+            left-0
+            -translate-x-1/2
+            -translate-y-1/2
 
             z-20
 
@@ -364,8 +366,10 @@ return (
             hidden md:block
 
             absolute
-            bottom-16
-            right-4
+            bottom-0
+            right-0
+            -translate-x-1/2
+            -translate-y-1/2
 
             z-20
 
