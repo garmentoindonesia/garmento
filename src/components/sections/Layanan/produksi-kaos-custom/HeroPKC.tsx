@@ -367,9 +367,9 @@ return (
 
             absolute
             bottom-0
-            right-0
+            left-1/2
             -translate-x-1/2
-            -translate-y-1/2
+            translate-y-1/2
 
             z-20
 
