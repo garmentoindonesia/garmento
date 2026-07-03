@@ -267,7 +267,7 @@ return (
 
         {/* IMAGE */}
         <Image
-          src="/heroPKCnew.png"
+          src="/heroPKCnewX.png"
           alt="Produksi Kaos Custom Garmento"
           width={700}
           height={700}
