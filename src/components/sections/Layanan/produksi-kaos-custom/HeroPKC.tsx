@@ -292,8 +292,8 @@ return (
             absolute
             top-0
             left-0
-            -translate-x-1/2
-            -translate-y-1/2
+            -translate-x-1/4
+            -translate-y-1/4
 
             z-20
 
