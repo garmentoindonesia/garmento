@@ -71,7 +71,7 @@ export default function Solution() {
                 <div className="absolute inset-0 bg-[#113972]/10 blur-3xl rounded-full opacity-30" />
 
                 <Image
-                    src="/solutionberanda.jpg"
+                    src="/solution.png"
                     alt="Produksi Kaos GARMENTO"
                     width={700}
                     height={500}
