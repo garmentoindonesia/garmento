@@ -139,7 +139,7 @@ return (
 
         <div className="flex items-center gap-1.5 whitespace-nowrap">
           <span className="text-green-400">✔</span>
-          Minimum Order Fleksibel
+          Legalitas lengkap
         </div>
       </div>
 

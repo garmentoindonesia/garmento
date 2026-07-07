@@ -174,7 +174,7 @@ export default function Hero() {
 
             <div className="flex items-center gap-1.5 whitespace-nowrap">
               <span className="text-green-400">✔</span>
-              Minimum order fleksibel
+              Legalitas lengkap
             </div>
 
             <div className="flex items-center gap-1.5 whitespace-nowrap">
