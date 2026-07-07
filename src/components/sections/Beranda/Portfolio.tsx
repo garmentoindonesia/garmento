@@ -5,27 +5,27 @@ import Image from "next/image";
 
 const portfolioItems = [
   {
-    image: "/event-nasionalx.jpg",
+    image: "/porto1.png",
     title: "Event Nasional",
     total: "2.000 pcs",
   },
   {
-    image: "/perusahaan-teknologix.jpg",
+    image: "/porto2.png",
     title: "Perusahaan Teknologi",
     total: "1.500 pcs",
   },
   {
-    image: "/bumnx.jpg",
+    image: "/porto3.png",
     title: "BUMN",
     total: "3.500 pcs",
   },
   {
-    image: "/eventorganizer.jpg",
+    image: "/porto4.png",
     title: "Event Organizer",
     total: "5.000 pcs",
   },
   {
-    image: "/brand-lokalx.jpg",
+    image: "/porto5.png",
     title: "Brand Lokal",
     total: "1.200 pcs",
   },
