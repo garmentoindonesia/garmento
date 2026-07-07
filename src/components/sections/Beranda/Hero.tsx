@@ -208,7 +208,7 @@ export default function Hero() {
               priority
               className="
                 relative z-10 w-full h-auto object-contain
-                rounded-tr-[69px] rounded-br-[69px]
+                rounded-tl-[69px] rounded-bl-[69px]
                 transition-all duration-500 ease-out
                 group-hover:-translate-y-3
                 group-hover:scale-[1.02]
