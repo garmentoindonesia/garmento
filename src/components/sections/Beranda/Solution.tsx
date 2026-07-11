@@ -189,7 +189,10 @@ export default function Solution() {
             {footerPoints.map((item, index) => (
               <div
                 key={index}
-                className="flex items-start gap-3"
+                className={`
+                  flex items-start gap-3
+                  ${index === footerPoints.length - 1 ? "col-span-2 justify-center lg:col-span-1 lg:justify-start" : ""}
+                `}
               >
                 <div className="w-12 h-12 shrink-0 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center">
                   <Image
