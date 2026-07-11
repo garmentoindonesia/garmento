@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 
 const portfolioItems = [
@@ -35,7 +35,46 @@ export default function Portfolio() {
 
   const [startIndex, setStartIndex] = useState(0);
 
+  const [activeMobile, setActiveMobile] = useState(0);
+
+  const mobileSliderRef = useRef<HTMLDivElement>(null);
+
   const visibleCards = 4;
+
+  const handleMobileScroll = (
+    e: React.UIEvent<HTMLDivElement>
+  ) => {
+    const container = e.currentTarget;
+
+    const cardWidth =
+      container.firstElementChild?.clientWidth || 0;
+
+    const gap = 20; // gap-5 = 20px
+
+    const index = Math.round(
+      container.scrollLeft / (cardWidth + gap)
+    );
+
+    setActiveMobile(index);
+  };
+
+  const goToMobileSlide = (index: number) => {
+    if (!mobileSliderRef.current) return;
+
+    const container = mobileSliderRef.current;
+
+    const cardWidth =
+      container.firstElementChild?.clientWidth || 0;
+
+    const gap = 20;
+
+    container.scrollTo({
+      left: index * (cardWidth + gap),
+      behavior: "smooth",
+    });
+
+    setActiveMobile(index);
+  };
 
   const nextSlide = () => {
     setStartIndex((prev) =>
@@ -90,8 +129,11 @@ export default function Portfolio() {
         <div className="md:hidden mt-10">
 
           <div
+            ref={mobileSliderRef}
+            onScroll={handleMobileScroll}
             className="
-              flex gap-5 overflow-x-auto pb-4
+              flex gap-5 overflow-x-auto
+              pb-4
               snap-x snap-mandatory
               scrollbar-hide
             "
@@ -101,7 +143,7 @@ export default function Portfolio() {
               <div
                 key={index}
                 className="
-                  min-w-[88%]
+                  min-w-[81%]
                   snap-center
                   bg-white rounded-3xl overflow-hidden
                   border border-gray-200
@@ -147,6 +189,27 @@ export default function Portfolio() {
 
         </div>
 
+        <div className="flex justify-center gap-2 mt-4">
+
+          {portfolioItems.map((_, index) => (
+
+            <button
+              key={index}
+              onClick={() => goToMobileSlide(index)}
+              className={`
+                transition-all duration-300 rounded-full
+                ${
+                  activeMobile === index
+                    ? "bg-[#1E4ED8] w-7 h-2"
+                    : "bg-gray-300 w-2 h-2"
+                }
+              `}
+            />
+
+          ))}
+
+        </div>
+
         {/* ========================= */}
         {/* DESKTOP SLIDER */}
         {/* ========================= */}
@@ -156,7 +219,7 @@ export default function Portfolio() {
           <button
             onClick={prevSlide}
             className="
-              absolute left-[-28px]
+              absolute -left-14
               top-1/2 -translate-y-1/2
               z-20
               w-12 h-12 rounded-full
@@ -167,16 +230,27 @@ export default function Portfolio() {
               transition-all duration-300
             "
           >
-            <span className="text-[#1E4ED8] text-4xl leading-none">
-              ‹
-            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6 text-[#1E4ED8]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2.5}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
           </button>
 
           {/* RIGHT BUTTON */}
           <button
             onClick={nextSlide}
             className="
-              absolute right-[-28px]
+              absolute -right-14
               top-1/2 -translate-y-1/2
               z-20
               w-12 h-12 rounded-full
@@ -187,9 +261,20 @@ export default function Portfolio() {
               transition-all duration-300
             "
           >
-            <span className="text-[#1E4ED8] text-4xl leading-none">
-              ›
-            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6 text-[#1E4ED8]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2.5}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
           </button>
 
           {/* CARDS */}
