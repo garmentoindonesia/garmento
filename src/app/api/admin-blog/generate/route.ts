@@ -108,6 +108,7 @@ JANGAN beri penjelasan.
 JANGAN beri catatan tambahan.
 JANGAN bikin tabel.
 JANGAN gunakan markdown code block.
+JANGAN gunakan text area.
 JANGAN gunakan pembuka atau penutup percakapan.
 JANGAN gunakan format selain MDX final.
 `;
