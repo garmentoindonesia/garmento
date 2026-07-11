@@ -136,46 +136,8 @@ export default function Solution() {
               rapi, timeline jelas, dan quality control ketat.
             </p>
 
-            <div
-              className="
-                mt-6
-                inline-flex
-                items-center
-                gap-3
-                rounded-full
-                border
-                border-blue-100
-                bg-white
-                px-5
-                py-3
-                shadow-sm
-
-                mx-auto
-                md:mx-0
-              "
-            >
-              <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center">
-                <Image
-                  src="/klien.svg"
-                  alt="Klien GARMENTO"
-                  width={20}
-                  height={20}
-                />
-              </div>
-
-              <div className="text-left">
-                <div className="text-[#1E4ED8] font-bold text-base leading-none">
-                  Dipercaya 100+ Perusahaan
-                </div>
-
-                <div className="text-[13px] text-gray-500 mt-1">
-                  Perusahaan, Instansi & Event Organizer
-                </div>
-              </div>
-            </div>
-
             {/* Points */}
-            <div className="grid sm:grid-cols-2 gap-4 mt-7">
+            <div className="grid sm:grid-cols-2 gap-4 mt-5">
               {points.map((item, index) => (
                 <div
                   key={index}
