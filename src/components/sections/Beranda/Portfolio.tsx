@@ -219,20 +219,49 @@ export default function Portfolio() {
           <button
             onClick={prevSlide}
             className="
-              absolute -left-14
-              top-1/2 -translate-y-1/2
+              group
+              absolute
+              -left-14
+              top-1/2
+              -translate-y-1/2
               z-20
-              w-12 h-12 rounded-full
-              bg-white border border-gray-200
+
+              flex
+              h-12
+              w-12
+              items-center
+              justify-center
+
+              rounded-full
+              border
+              border-gray-200
+              bg-white
               shadow-md
-              flex items-center justify-center
-              hover:scale-105 hover:shadow-lg
-              transition-all duration-300
+
+              cursor-pointer
+
+              transition-all
+              duration-300
+              ease-out
+
+              hover:scale-105
+              hover:bg-blue-50
+              hover:border-blue-200
+              hover:shadow-[0_12px_30px_rgba(17,57,114,0.18)]
+
+              active:scale-95
             "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6 text-[#1E4ED8]"
+              className="
+                h-6
+                w-6
+                text-[#1E4ED8]
+                transition-colors
+                duration-300
+                group-hover:text-[#113972]
+              "
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -250,20 +279,49 @@ export default function Portfolio() {
           <button
             onClick={nextSlide}
             className="
-              absolute -right-14
-              top-1/2 -translate-y-1/2
+              group
+              absolute
+              -right-14
+              top-1/2
+              -translate-y-1/2
               z-20
-              w-12 h-12 rounded-full
-              bg-white border border-gray-200
+
+              flex
+              h-12
+              w-12
+              items-center
+              justify-center
+
+              rounded-full
+              border
+              border-gray-200
+              bg-white
               shadow-md
-              flex items-center justify-center
-              hover:scale-105 hover:shadow-lg
-              transition-all duration-300
+
+              cursor-pointer
+
+              transition-all
+              duration-300
+              ease-out
+
+              hover:scale-105
+              hover:bg-blue-50
+              hover:border-blue-200
+              hover:shadow-[0_12px_30px_rgba(17,57,114,0.18)]
+
+              active:scale-95
             "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6 text-[#1E4ED8]"
+              className="
+                h-6
+                w-6
+                text-[#1E4ED8]
+                transition-colors
+                duration-300
+                group-hover:text-[#113972]
+              "
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
