@@ -8,21 +8,39 @@ export default function HeroPKC({
   adsMode = false,
 }: HeroPKCProps) {
 return (
+
 <section
   className="
     relative
     w-full
     overflow-hidden
-    bg-cover
-    bg-center
-    bg-no-repeat
-    pb-16 md
+    pb-16
   "
-  style={{
-          backgroundImage: "url('/bgpkc.jpg')",
-        }}
 >
-{/* NO OVERLAY */}
+
+    {/* MOBILE BACKGROUND */}
+    <div className="absolute inset-0 md:hidden">
+      <Image
+        src="/bgpkc-mobile.jpg"
+        alt="kaos & polo shirt custom"
+        fill
+        priority
+        className="object-cover"
+      />
+    </div>
+
+    {/* DESKTOP BACKGROUND */}
+    <div className="absolute inset-0 hidden md:block">
+      <Image
+        src="/bgpkc.jpg"
+        alt="kaos & polo shirt custom"
+        fill
+        priority
+        className="object-cover"
+      />
+    </div>   
+
+  {/* NO OVERLAY */}
 
   <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 md:pt-36 pb-20 grid md:grid-cols-2 gap-10 md:gap-14 lg:gap-20 items-center">
 

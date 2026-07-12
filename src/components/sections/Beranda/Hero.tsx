@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="absolute inset-0 md:hidden">
         <Image
           src="/bghome-mobile.jpg"
-          alt=""
+          alt="kaos & polo shirt custom"
           fill
           priority
           className="object-cover"
@@ -28,7 +28,7 @@ export default function Hero() {
       <div className="absolute inset-0 hidden md:block">
         <Image
           src="/bghome.jpg"
-          alt=""
+          alt="kaos & polo shirt custom"
           fill
           priority
           className="object-cover"
