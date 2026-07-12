@@ -9,15 +9,31 @@ export default function Hero() {
         relative
         w-full
         overflow-hidden
-        bg-cover
-        bg-center
-        bg-no-repeat
-        pb-16 md
+        pb-16
       "
-      style={{
-        backgroundImage: "url('/bghome.jpg')",
-      }}
     >
+
+      {/* MOBILE BACKGROUND */}
+      <div className="absolute inset-0 md:hidden">
+        <Image
+          src="/bghome-mobile.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
+
+      {/* DESKTOP BACKGROUND */}
+      <div className="absolute inset-0 hidden md:block">
+        <Image
+          src="/bghome.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
 
       {/* NO OVERLAY */}
 
