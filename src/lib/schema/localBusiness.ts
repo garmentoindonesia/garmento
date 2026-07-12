@@ -149,8 +149,8 @@ export const localBusinessSchema = {
   },
 
   knowsAbout: [
-    "Produksi Kaos Custom",
-    "Produksi Polo Shirt",
+    "Vendor Kaos Custom",
+    "Vendor Polo Shirt",
     "Kaos Event",
     "Kaos Perusahaan",
     "Seragam Kerja",

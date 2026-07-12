@@ -25,7 +25,7 @@ const faqSchema = createFAQSchema(FAQ_PPS);
 const serviceSchema = createServiceSchema({
   name: "Produksi Polo Shirt",
   description:
-    "Jasa produksi polo shirt berkualitas premium untuk perusahaan, komunitas, event dan instansi.",
+    "Vendor polo shirt berkualitas premium untuk perusahaan, komunitas, event dan instansi.",
 
   url: "https://www.garmento.id/layanan/produksi-polo-shirt",
 });
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Jasa produksi polo shirt skala besar berkualitas premium untuk perusahaan, event, komunitas, brand dan instansi dengan proses produksi terstruktur dan tepat waktu.",
+    "Vendor polo shirt skala besar berkualitas premium untuk perusahaan, event, komunitas, brand dan instansi dengan proses produksi terstruktur dan tepat waktu.",
 
   alternates: {
     canonical: "/layanan/produksi-polo-shirt",
@@ -63,9 +63,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "/layanan/produksi-polo-shirt",
     title:
-      "Produksi Polo Shirt Skala Besar untuk Seragam & Brand Berkualitas | GARMENTO",
+      "Vendor Polo Shirt Skala Besar untuk Seragam & Brand Berkualitas | GARMENTO",
     description:
-      "Jasa produksi polo shirt skala besar berkualitas premium untuk perusahaan, event, komunitas, brand dan instansi dengan proses produksi terstruktur dan tepat waktu.",
+      "Vendor polo shirt skala besar berkualitas premium untuk perusahaan, event, komunitas, brand dan instansi dengan proses produksi terstruktur dan tepat waktu.",
     siteName: "GARMENTO",
     images: [
       {
@@ -79,9 +79,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Produksi Polo Shirt Skala Besar untuk Seragam & Brand Berkualitas | GARMENTO",
+      "Vendor Polo Shirt Skala Besar untuk Seragam & Brand Berkualitas | GARMENTO",
     description:
-      "Jasa produksi polo shirt skala besar berkualitas premium untuk perusahaan, event, komunitas, brand dan instansi dengan proses produksi terstruktur dan tepat waktu.",
+      "Vendor polo shirt skala besar berkualitas premium untuk perusahaan, event, komunitas, brand dan instansi dengan proses produksi terstruktur dan tepat waktu.",
     images: ["/og-image-pps.jpg"],
   },
 };

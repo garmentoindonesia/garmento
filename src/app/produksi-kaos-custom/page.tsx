@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | GARMENTO",
   },
   description:
-    "Jasa Produksi kaos custom skala besar untuk Event, Seragam Kantor& Merchandise dengan kualitas terjamin dan pengerjaan tepat waktu.",
+    "Vendor kaos custom skala besar untuk Event, Seragam Kantor & Merchandise dengan kualitas terjamin dan pengerjaan tepat waktu.",
 
   robots: {
     index: false,

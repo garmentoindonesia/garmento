@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Jasa produksi kaos custom & polo shirt skala besar untuk Event, Seragam Kantor & Merchandise.",
+    "Vendor kaos custom & polo shirt skala besar untuk Event, Seragam Kantor & Merchandise dengan kualitas terjamin dan ketepatan waktu mutlak.",
 
   alternates: {
     canonical: "/",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     url: "https://www.garmento.id",
     title: "GARMENTO | Produksi Kaos Skala Besar",
     description:
-      "Jasa produksi kaos custom & polo shirt skala besar untuk Event, Seragam Kantor & Merchandise.",
+      "Vendor kaos custom & polo shirt skala besar untuk Event, Seragam Kantor & Merchandise dengan kualitas terjamin dan ketepatan waktu mutlak.",
     siteName: "GARMENTO",
     images: [
       {
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GARMENTO | Produksi Kaos Skala Besar",
     description:
-      "Jasa produksi kaos custom & polo shirt skala besar untuk Event, Seragam Kantor & Merchandise.",
+      "Vendor kaos custom & polo shirt skala besar untuk Event, Seragam Kantor & Merchandise dengan kualitas terjamin dan ketepatan waktu mutlak.",
     images: ["/og-image.jpg"],
   },
 
