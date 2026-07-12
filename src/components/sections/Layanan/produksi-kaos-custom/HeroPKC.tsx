@@ -19,7 +19,7 @@ return (
     pb-16 md
   "
   style={{
-          backgroundImage: "url('/backgroundPKC.jpg')",
+          backgroundImage: "url('/bgpkc.jpg')",
         }}
 >
 {/* OVERLAY */}
@@ -266,6 +266,7 @@ return (
         <div className="absolute inset-0 bg-[#113972]/30 blur-3xl rounded-full opacity-50" />
 
         {/* IMAGE */}
+        {/*
         <Image
           src="/heroPKCnewXY.png"
           alt="Produksi Kaos Custom Garmento"
@@ -283,6 +284,7 @@ return (
             group-hover:scale-[1.02]
           "
         />
+        */}
 
         {/* FLOATING CARD CLIENT */}
         <div
