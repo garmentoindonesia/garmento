@@ -12,7 +12,7 @@ export default function Hero() {
         bg-cover
         bg-center
         bg-no-repeat
-        pb-16 md:pb-20
+        pb-16 md
       "
       style={{
         backgroundImage: "url('/bghome.jpg')",
