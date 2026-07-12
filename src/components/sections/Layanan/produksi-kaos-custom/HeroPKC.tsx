@@ -292,10 +292,8 @@ return (
             hidden md:block
 
             absolute
-            top-0
+            bottom-0
             left-0
-            -translate-x-1/4
-            -translate-y-1/4
 
             z-20
 
@@ -369,9 +367,7 @@ return (
 
             absolute
             bottom-0
-            left-1/2
-            -translate-x-1/2
-            translate-y-1/2
+            right-0
 
             z-20
 
