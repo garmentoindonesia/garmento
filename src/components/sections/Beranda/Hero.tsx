@@ -15,7 +15,7 @@ export default function Hero() {
         pb-16 md:pb-20
       "
       style={{
-        backgroundImage: "url('/backgroundberandax.jpg')",
+        backgroundImage: "url('/bghome.jpg')",
       }}
     >
 
@@ -200,8 +200,9 @@ export default function Hero() {
             <div className="absolute inset-0 bg-[#113972]/30 blur-3xl rounded-full opacity-50" />
 
             {/* IMAGE */}
+            {/*
             <Image
-              src="/herohome.png"
+              src="/heroberandaNEW.png"
               alt="Produksi Kaos Garmento"
               width={700}
               height={700}
@@ -214,6 +215,7 @@ export default function Hero() {
                 group-hover:scale-[1.02]
               "
             />
+            */}
 
             {/* FLOATING CARD 1 */}
             <div
