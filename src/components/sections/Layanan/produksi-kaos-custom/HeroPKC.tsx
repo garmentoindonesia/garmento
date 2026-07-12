@@ -22,7 +22,7 @@ return (
           backgroundImage: "url('/bgpkc.jpg')",
         }}
 >
-{/* OVERLAY */}
+{/* NO OVERLAY */}
 
   <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 md:pt-36 pb-20 grid md:grid-cols-2 gap-10 md:gap-14 lg:gap-20 items-center">
 
@@ -287,6 +287,7 @@ return (
         */}
 
         {/* FLOATING CARD CLIENT */}
+        {/*
         <div
           className="
             hidden md:block
@@ -359,8 +360,10 @@ return (
 
           </div>
         </div>
+        */}
 
         {/* FLOATING CARD PRODUKSI */}
+        {/*
         <div
           className="
             hidden md:block
@@ -431,7 +434,7 @@ return (
 
           </div>
         </div>
-
+        */}
       </div>
 
     </div>

@@ -19,8 +19,7 @@ export default function Hero() {
       }}
     >
 
-      {/* OVERLAY */}
-      <div className="absolute inset-0 bg-black/45 z-0" />
+      {/* NO OVERLAY */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-36 pb-20 grid md:grid-cols-2 gap-10 md:gap-14 lg:gap-20 items-center">
 
@@ -218,6 +217,7 @@ export default function Hero() {
             */}
 
             {/* FLOATING CARD 1 */}
+            {/*
             <div
               className="
                 hidden md:block
@@ -277,8 +277,10 @@ export default function Hero() {
               </div>
 
             </div>
+            */}
 
             {/* FLOATING CARD 2 */}
+            {/*
             <div
               className="
                 hidden md:block
@@ -338,6 +340,7 @@ export default function Hero() {
               </div>
 
             </div>
+            */}
 
           </div>
 
