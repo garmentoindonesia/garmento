@@ -37,7 +37,18 @@ export default function Hero() {
 
       {/* NO OVERLAY */}
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-36 pb-20 grid md:grid-cols-2 gap-10 md:gap-14 lg:gap-20 items-center">
+      <div
+        className="
+          relative z-10
+          max-w-7xl mx-auto
+          px-6
+          pt-20 md:pt-36
+          pb-20
+          grid md:grid-cols-2
+          gap-10 md:gap-14 lg:gap-20
+          items-center
+        "
+      >
 
         {/* LEFT */}
         <div className="animate-fadeLeft">
