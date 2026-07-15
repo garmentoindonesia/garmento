@@ -187,26 +187,27 @@ export default function Portfolio() {
 
           </div>
 
-        </div>
+          {/* MOBILE DOTS */}
+          <div className="flex justify-center gap-2 mt-4">
 
-        <div className="flex justify-center gap-2 mt-4">
+            {portfolioItems.map((_, index) => (
 
-          {portfolioItems.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToMobileSlide(index)}
+                className={`
+                  transition-all duration-300 rounded-full
+                  ${
+                    activeMobile === index
+                      ? "bg-[#1E4ED8] w-7 h-2"
+                      : "bg-gray-300 w-2 h-2"
+                  }
+                `}
+              />
 
-            <button
-              key={index}
-              onClick={() => goToMobileSlide(index)}
-              className={`
-                transition-all duration-300 rounded-full
-                ${
-                  activeMobile === index
-                    ? "bg-[#1E4ED8] w-7 h-2"
-                    : "bg-gray-300 w-2 h-2"
-                }
-              `}
-            />
+            ))}
 
-          ))}
+          </div>
 
         </div>
 
