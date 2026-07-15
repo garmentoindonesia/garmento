@@ -148,7 +148,7 @@ export default function Footer() {
 
             <div className="mt-5 flex flex-col gap-3 text-sm text-gray-300">
 
-              <Link href="/tentang-kami" className="hover:text-white transition">
+              <Link href="/tentang" className="hover:text-white transition">
                 Tentang Kami
               </Link>
 
