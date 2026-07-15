@@ -27,7 +27,7 @@ export default function Hero() {
       {/* DESKTOP BACKGROUND */}
       <div className="absolute inset-0 hidden md:block">
         <Image
-          src="/bg-home.jpg"
+          src="/bg-homepage.jpg"
           alt="kaos & polo shirt custom"
           fill
           priority
