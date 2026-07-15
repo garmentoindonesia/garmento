@@ -21,7 +21,7 @@ return (
     {/* MOBILE BACKGROUND */}
     <div className="absolute inset-0 md:hidden">
       <Image
-        src="/bgpkc-mobile.jpg"
+        src="/bg-pkc-mobile.jpg"
         alt="kaos & polo shirt custom"
         fill
         priority
