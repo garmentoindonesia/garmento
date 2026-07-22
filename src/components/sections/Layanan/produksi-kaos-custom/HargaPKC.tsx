@@ -2,13 +2,13 @@ export default function HargaPKC() {
   const plans = [
     {
       title: "Kaos Polyester",
-      price: "Rp60.000",
+      price: "Rp55.000",
       button: "Konsultasi Polyester",
       featured: false,
       whatsapp:
         "Halo GARMENTO, saya ingin konsultasi produksi Kaos Polyester.",
       features: [
-        "Minimal Order 150 Pcs",
+        "Minimal Order 100 Pcs",
         "Bahan Polyester",
         "Sablon Standard",
         "Ukuran XS–XL",
@@ -16,13 +16,13 @@ export default function HargaPKC() {
     },
     {
       title: "Kaos Cotton Combed",
-      price: "Rp85.000",
+      price: "Rp79.000",
       button: "Konsultasi Combed",
       featured: true,
       whatsapp:
         "Halo GARMENTO, saya ingin konsultasi produksi Kaos Cotton Combed.",
       features: [
-        "Minimal Order 150 Pcs",
+        "Minimal Order 100 Pcs",
         "Bahan Cotton Combed",
         "Sablon High Quality",
         "Ukuran XS–XL",
@@ -30,13 +30,13 @@ export default function HargaPKC() {
     },
     {
       title: "Kaos Cotton Bamboo",
-      price: "Rp95.000",
+      price: "Rp89.000",
       button: "Konsultasi Bamboo",
       featured: false,
       whatsapp:
         "Halo GARMENTO, saya ingin konsultasi produksi Kaos Cotton Bamboo.",
       features: [
-        "Minimal Order 150 Pcs",
+        "Minimal Order 100 Pcs",
         "Bahan Cotton Bamboo",
         "Finishing Premium",
         "Ukuran XS–XL",

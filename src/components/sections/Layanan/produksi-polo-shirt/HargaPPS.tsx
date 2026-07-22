@@ -1,43 +1,44 @@
 export default function HargaPPS() {
   const plans = [
     {
-      title: "Polo Lacoste Pique Diamond",
-      price: "Rp139.000",
-      button: "Konsultasi Pique Diamond",
+      title: "Polo Lacoste Soft",
+      price: "Rp79.000",
+      button: "Konsultasi Lacoste Soft",
       featured: false,
       whatsapp:
-        "Halo GARMENTO, saya ingin konsultasi produksi Polo Lacoste Pique Diamond.",
+        "Halo GARMENTO, saya ingin konsultasi produksi Polo Lacoste Soft.",
       features: [
-        "Minimal Order 150 Pcs",
-        "Bahan 100% katun",
-        "Ukuran XS–XL",
+        "Minimal Order 100 Pcs",
+        "Harga lebih ekonomis",
+        "Cocok untuk kebutuhan massal",
       ],
     },
     {
       title: "Polo Lacoste Pique Hexagon",
-      price: "Rp125.000",
+      price: "Rp113.000",
       button: "Konsultasi Pique Hexagon",
       featured: true,
       whatsapp:
         "Halo GARMENTO, saya ingin konsultasi produksi Polo Lacoste Pique Hexagon.",
       features: [
-        "Minimal Order 150 Pcs",
+        "Minimal Order 100 Pcs",
         "Bahan Premium",
-        "Ukuran XS–XL",
+        "Tidak menerawang",
+        "Nyaman dipakai sepanjang hari",
       ],
     },
     {
-      title: "Polo Custom",
-      price: "Rp155.000",
-      button: "Konsultasi Polo Custom",
+      title: "Polo Lacoste Pique Diamond",
+      price: "Rp119.000",
+      button: "Konsultasi Pique Diamond",
       featured: false,
       whatsapp:
-        "Halo GARMENTO, saya ingin konsultasi produksi Polo Custom.",
+        "Halo GARMENTO, saya ingin konsultasi produksi Polo Lacoste Pique Diamond.",
       features: [
-        "Minimal Order 150 Pcs",
-        "Custom Pecah Pola",
-        "Kombinasi Warna",
-        "Ukuran XS–XL",
+        "Minimal Order 100 Pcs",
+        "Bahan Premium",
+        "Tekstur lebih halus",
+        "Nyaman digunakan",
       ],
     },
   ];

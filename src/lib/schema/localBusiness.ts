@@ -37,7 +37,7 @@ export const localBusinessSchema = {
 
   email: "garmento.indonesia@gmail.com",
 
-  priceRange: "Rp60.000 – Rp155.000 / pcs",
+  priceRange: "Rp55.000 – Rp119.000 / pcs",
 
   currenciesAccepted: "IDR",
 

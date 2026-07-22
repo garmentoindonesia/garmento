@@ -26,7 +26,7 @@ export default function PricingAnchor() {
           </p>
 
           <div className="mt-2 text-[#1E4ED8] text-2xl sm:text-4xl md:text-6xl font-bold tracking-[-1px] leading-tight">
-            Rp60.000 – Rp155.000
+            Rp55.000 – Rp119.000
 
             <span className="text-[#113972] text-lg sm:text-2xl md:text-4xl">
               {" "} / pcs
