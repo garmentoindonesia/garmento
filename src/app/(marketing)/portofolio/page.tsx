@@ -17,11 +17,11 @@ const portfolioSchema = createPortfolioSchema();
 const breadcrumbSchema = createBreadcrumbSchema([
   {
     name: "Home",
-    url: "https://www.garmento.id",
+    url: "https://garmento.id",
   },
   {
     name: "Portofolio",
-    url: "https://www.garmento.id/portofolio",
+    url: "https://garmento.id/portofolio",
   },
 ]);
 
