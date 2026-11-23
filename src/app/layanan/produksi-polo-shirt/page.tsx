@@ -27,21 +27,21 @@ const serviceSchema = createServiceSchema({
   description:
     "Vendor polo shirt berkualitas premium untuk perusahaan, komunitas, event dan instansi.",
 
-  url: "https://www.garmento.id/layanan/produksi-polo-shirt",
+  url: "https://garmento.id/layanan/produksi-polo-shirt",
 });
 
 const breadcrumbSchema = createBreadcrumbSchema([
   {
     name: "Home",
-    url: "https://www.garmento.id",
+    url: "https://garmento.id",
   },
   {
     name: "Layanan",
-    url: "https://www.garmento.id/layanan",
+    url: "https://garmento.id/layanan",
   },
   {
     name: "Produksi Polo Shirt",
-    url: "https://www.garmento.id/layanan/produksi-polo-shirt",
+    url: "https://garmento.id/layanan/produksi-polo-shirt",
   },
 ]);
 
