@@ -27,21 +27,21 @@ const serviceSchema = createServiceSchema({
   description:
     "Vendor kaos custom skala besar untuk Event, Seragam Kantor & Merchandise.",
 
-  url: "https://www.garmento.id/layanan/produksi-kaos-custom",
+  url: "https://garmento.id/layanan/produksi-kaos-custom",
 });
 
 const breadcrumbSchema = createBreadcrumbSchema([
   {
     name: "Home",
-    url: "https://www.garmento.id",
+    url: "https://garmento.id",
   },
   {
     name: "Layanan",
-    url: "https://www.garmento.id/layanan",
+    url: "https://garmento.id/layanan",
   },
   {
     name: "Produksi Kaos Custom",
-    url: "https://www.garmento.id/layanan/produksi-kaos-custom",
+    url: "https://garmento.id/layanan/produksi-kaos-custom",
   },
 ]);
 
