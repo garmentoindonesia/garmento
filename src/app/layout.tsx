@@ -14,7 +14,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.garmento.id"),
+  metadataBase: new URL("https://garmento.id"),
 
   title: {
     default: "GARMENTO | Produksi Kaos Skala Besar",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "https://www.garmento.id",
+    url: "https://garmento.id",
     title: "GARMENTO | Produksi Kaos Skala Besar",
     description:
       "Vendor kaos custom & polo shirt skala besar untuk Event, Seragam Kantor & Merchandise dengan kualitas terjamin dan ketepatan waktu mutlak.",
